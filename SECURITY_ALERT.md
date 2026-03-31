@@ -4,8 +4,8 @@
 
 Bu repository'de **2 adet API key** public olarak commit edilmiştir:
 
-1. **Gemini API Key**: `AIzaSyA64_I1K4dJR3Qpxo82knmOVFsUvs6Ng7A`
-2. **Resend API Key**: `re_MZMBTTVt_AaFmTRdsCk5HVYHQaxsrsRwH`
+1. **Gemini API Key**: `[REDACTED - ROTATED]`
+2. **Resend API Key**: `[REDACTED - ROTATED]`
 
 ## 🚨 Hemen Yapılması Gerekenler
 
@@ -33,8 +33,8 @@ pip install git-filter-repo
 
 # API key'leri replace et
 git filter-repo --replace-text <(cat <<EOF
-AIzaSyA64_I1K4dJR3Qpxo82knmOVFsUvs6Ng7A==>REMOVED_API_KEY
-re_MZMBTTVt_AaFmTRdsCk5HVYHQaxsrsRwH==>REMOVED_API_KEY
+OLD_GEMINI_KEY==>REMOVED_API_KEY
+OLD_RESEND_KEY==>REMOVED_API_KEY
 EOF
 )
 
@@ -49,8 +49,8 @@ git push origin --force --all
 java -jar bfg.jar --replace-text replacements.txt
 
 # replacements.txt içeriği:
-# AIzaSyA64_I1K4dJR3Qpxo82knmOVFsUvs6Ng7A
-# re_MZMBTTVt_AaFmTRdsCk5HVYHQaxsrsRwH
+# OLD_GEMINI_KEY
+# OLD_RESEND_KEY
 
 git reflog expire --expire=now --all && git gc --prune=now --aggressive
 git push origin --force --all

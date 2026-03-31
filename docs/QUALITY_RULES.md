@@ -410,15 +410,15 @@ Diese Regel gilt für:
 #### ❌ NIEMALS:
 ```javascript
 // FALSCH - API Key direkt im Code
-const GEMINI_API_KEY = 'AIzaSyA64_I1K4dJR3Qpxo82knmOVFsUvs6Ng7A';
+const GEMINI_API_KEY = 'AIza...REDACTED_EXAMPLE';
 
 // FALSCH - In Konfigurationsdatei
 export const config = {
-  apiKey: 're_MZMBTTVt_AaFmTRdsCk5HVYHQaxsrsRwH'
+   apiKey: 're_...REDACTED_EXAMPLE'
 };
 
 // FALSCH - In README/Dokumentation
-RESEND_API_KEY=re_MZMBTTVt_AaFmTRdsCk5HVYHQaxsrsRwH
+RESEND_API_KEY=re_your_api_key_here
 ```
 
 #### ✅ KORREKT:
@@ -558,14 +558,14 @@ NODE_ENV=development
 #### ❌ Fehler 1: API Key in HTML
 ```html
 <script>
-const API_KEY = 'AIzaSyA64_I1K4dJR3Qpxo82knmOVFsUvs6Ng7A';
+const API_KEY = 'AIza...REDACTED_EXAMPLE';
 </script>
 ```
 
 #### ❌ Fehler 2: Credential in README
 ```markdown
 ## Setup
-Run: RESEND_API_KEY=re_MZMBTTVt npm start
+Run: RESEND_API_KEY=re_your_api_key_here npm start
 ```
 
 #### ❌ Fehler 3: .env in Repository

@@ -105,7 +105,7 @@ nstech/
 - Resend API for transactional emails
 - Newsletter subscription
 - Contact form with validation
-- API key: `re_MZMBTTVt_AaFmTRdsCk5HVYHQaxsrsRwH`
+- API key: Set via environment variable (`RESEND_API_KEY`)
 
 ### 🔍 SEO Optimized
 - Blog with German-focused articles
