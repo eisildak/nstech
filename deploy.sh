@@ -31,12 +31,30 @@ TARGET="${SSH_USER}@${SSH_HOST}:domains/certificate-nexus-global.de/public_html"
 
 SSH_CMD="ssh -p $SSH_PORT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
 
-# ── 1. Build yok (statik site) ───────────────────────────────
-echo -e "\n${YELLOW}[1/3] Static site — build gerekmiyor${NC}"
+# ── 1. Git commit & push ─────────────────────────────────────
+echo -e "\n${YELLOW}[1/4] Git değişiklikleri kontrol ediliyor...${NC}"
+if [ -n "$(git status --porcelain)" ]; then
+  git add -A
+  COMMIT_MSG="Deploy: $(date '+%Y-%m-%d %H:%M:%S')"
+  git commit -m "$COMMIT_MSG"
+  echo -e "${GREEN}  ✓ Commit oluşturuldu: ${COMMIT_MSG}${NC}"
+else
+  echo -e "${GREEN}  ✓ Değişiklik yok, commit atlanıyor${NC}"
+fi
+
+if git remote get-url origin > /dev/null 2>&1; then
+  git push origin "$(git rev-parse --abbrev-ref HEAD)"
+  echo -e "${GREEN}  ✓ GitHub'a push edildi${NC}"
+else
+  echo -e "${YELLOW}  ⚠ origin remote tanımlı değil, push atlanıyor${NC}"
+fi
+
+# ── 2. Build yok (statik site) ───────────────────────────────
+echo -e "\n${YELLOW}[2/4] Static site — build gerekmiyor${NC}"
 echo -e "${GREEN}  ✓ HTML/CSS/JS dosyaları hazır${NC}"
 
-# ── 2. Deploy ───────────────────────────────────────────────
-echo -e "\n${YELLOW}[2/3] Sunucuya yükleniyor...${NC}"
+# ── 3. Deploy ───────────────────────────────────────────────
+echo -e "\n${YELLOW}[3/4] Sunucuya yükleniyor...${NC}"
 echo -e "  → ${TARGET}"
 
 # Sadece deploy edilmesi gereken dosyalar (node_modules, .git, .env HARİÇ)
@@ -61,8 +79,8 @@ rsync -avz --delete -e "$SSH_CMD" \
 
 echo -e "${GREEN}  ✓ Dosyalar yüklendi${NC}"
 
-# ── 3. Node.js kurulumu (express server) ─────────────────────
-echo -e "\n${YELLOW}[3/3] Node.js bağımlılıkları kuruluyor...${NC}"
+# ── 4. Node.js kurulumu (express server) ─────────────────────
+echo -e "\n${YELLOW}[4/4] Node.js bağımlılıkları kuruluyor...${NC}"
 $SSH_CMD "${SSH_USER}@${SSH_HOST}" << 'ENDSSH'
   cd domains/certificate-nexus-global.de/public_html
   command -v npm && (npm install --production 2>/dev/null && echo "npm install OK" || echo "npm install failed, continuing...") || echo "npm not available on shared hosting (static site only)"

@@ -57,6 +57,19 @@
                     <a href="index.html" class="text-gray-600 hover:text-nstech-blue font-medium transition border-b-2 border-transparent pb-1">Startseite</a>
                     <a href="kontakt.html" class="text-gray-600 hover:text-nstech-blue font-medium transition border-b-2 border-transparent pb-1">Kontakt</a>
                     <a href="blog/index.html" class="text-gray-600 hover:text-nstech-blue font-medium transition border-b-2 border-transparent pb-1">Blog</a>
+                    <div class="relative ml-4">
+                        <button onclick="toggleLangMenu()" class="flex items-center text-gray-600 hover:text-nstech-blue focus:outline-none">
+                            <i class="fa-solid fa-globe mr-1"></i> <span>DE</span> <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                        </button>
+                        <div id="lang-dropdown" class="absolute right-0 mt-2 w-36 bg-white border border-gray-200 rounded-md shadow-lg hidden z-50">
+                            <a href="index.html" class="block px-4 py-2 text-sm text-white bg-nstech-blue">Deutsch</a>
+                            <a href="index-en.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+                            <a href="index-tr.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Türkçe</a>
+                            <a href="index-ar.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+                            <a href="index-ka.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ქართული</a>
+                            <a href="index-ha.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Hausa</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -236,6 +249,18 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggleLangMenu() {
+            const dropdown = document.getElementById('lang-dropdown');
+            if (dropdown) dropdown.classList.toggle('hidden');
+        }
+        document.addEventListener('click', function(e) {
+            const dropdown = document.getElementById('lang-dropdown');
+            if (dropdown && !e.target.closest('[onclick*="toggleLangMenu"]') && !e.target.closest('#lang-dropdown')) {
+                dropdown.classList.add('hidden');
+            }
+        });
+    </script>
 
 </body>
 </html>
