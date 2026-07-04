@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISO-Zertifizierung - NSTech Audit-Ready Software</title>
+    <title>ISO-Zertifizierung - Nexus Global Certificate Audit-Ready Software</title>
     <meta name="description" content="ISO 9001, ISO 27001, ISO 14001, ISO 22000 Zertifizierungsberatung für deutsche Unternehmen. DSGVO-konform und Audit-Ready.">
     
     <!-- External Resources -->
@@ -34,9 +34,14 @@
     </script>
     
     <style>
+        html { overflow-x: hidden; max-width: 100vw; }
+        *, *::before, *::after { box-sizing: border-box; }
+        img, video, canvas, svg { max-width: 100%; height: auto; }
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
+            overflow-x: hidden;
+            max-width: 100vw;
         }
     </style>
 </head>
@@ -48,8 +53,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 sm:h-20 items-center">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="flex items-center">
-                        <img src="assets/2white.png" alt="NSTech Logo" class="h-12 sm:h-16 md:h-16 rounded-xl">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="assets/logo.svg" alt="Nexus Global Certificate Logo" class="h-10 sm:h-12 md:h-12 rounded-xl flex-shrink-0">
+                        <div class="flex flex-col">
+                            <span class="text-nstech-blue font-bold text-sm sm:text-base md:text-lg leading-tight whitespace-nowrap">Nexus Global Certificate</span>
+                            <span class="text-yellow-500 text-[10px] sm:text-xs leading-tight whitespace-nowrap">Qualität. Vertrauen. Zukunft.</span>
+                        </div>
                     </a>
                 </div>
 
@@ -59,9 +68,19 @@
                     <a href="iso-zertifizierung.html" class="text-nstech-blue font-semibold border-b-2 border-nstech-blue pb-1">ISO-Zertifizierung</a>
                     <a href="uber-uns.html" class="text-gray-600 hover:text-nstech-blue font-medium transition border-b-2 border-transparent pb-1">Über Uns</a><a href="karriere.html" class="text-gray-600 hover:text-nstech-blue font-medium transition border-b-2 border-transparent pb-1">Karriere</a>
                     <a href="kontakt.html" class="text-gray-600 hover:text-nstech-blue font-medium transition border-b-2 border-transparent pb-1">Kontakt</a>
-                    <div class="flex items-center space-x-2 ml-4 border-l border-gray-300 pl-4">
-                        <a href="iso-zertifizierung.html" class="px-3 py-1.5 bg-nstech-blue text-white rounded-md font-semibold text-sm">DE</a>
-                        <a href="iso-certification.html" class="px-3 py-1.5 text-gray-600 hover:bg-gray-100 rounded-md font-semibold text-sm transition">EN</a><i class="fa-solid fa-globe text-gray-400 text-lg ml-2"></i>
+                    <!-- Language Selector -->
+                    <div class="relative ml-4">
+                        <button onclick="toggleLangMenu()" class="flex items-center text-gray-600 hover:text-nstech-blue focus:outline-none">
+                            <i class="fa-solid fa-globe mr-1"></i> <span>DE</span> <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                        </button>
+                        <div id="lang-dropdown" class="absolute right-0 mt-2 w-36 bg-white border border-gray-200 rounded-md shadow-lg hidden z-50">
+                            <a href="index.html" class="block px-4 py-2 text-sm text-white bg-nstech-blue">Deutsch</a>
+                            <a href="index-en.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+                            <a href="index-tr.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Türkçe</a>
+                            <a href="index-ar.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+                            <a href="index-ka.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ქართული</a>
+                            <a href="index-ha.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Hausa</a>
+                        </div>
                     </div>
                 </div>
 
@@ -560,7 +579,7 @@
     <section class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-nstech-dark mb-6">Warum ISO-Zertifizierung mit NSTech?</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-nstech-dark mb-6">Warum ISO-Zertifizierung mit Nexus Global Certificate?</h2>
                 <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
                     Einzigartige Kombination aus Software-Testing und ISO-Expertise
                 </p>
@@ -643,7 +662,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <img src="assets/2white.png" alt="NSTech Logo" class="h-20 sm:h-24 mb-6 rounded-xl">
+                    <img src="assets/logo.svg" alt="Nexus Global Certificate Logo" class="h-16 sm:h-20 mb-3 rounded-xl">
+                    <h3 class="text-white font-bold text-base sm:text-lg mb-1">Nexus Global Certificate</h3>
+                    <p class="text-yellow-500 text-xs sm:text-sm mb-3">Qualität. Vertrauen. Zukunft.</p>
                     <p class="text-gray-400 text-sm">Ihr Partner für Software-Qualität und ISO-Compliance in Deutschland.</p>
                 </div>
                 <div>
@@ -665,15 +686,16 @@
                 <div>
                     <h4 class="text-lg font-bold mb-4">Kontakt</h4>
                     <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><i class="fa-solid fa-envelope mr-2"></i>info@nstech.de</li>
-                        <li><i class="fa-solid fa-phone mr-2"></i>+49 (0) XXX XXXX</li>
+                        <li><i class="fa-solid fa-envelope mr-2"></i>info@certificate.nexus-global.tech</li>
+                        <li><a href="https://nexus-global.tech/en/" target="_blank" class="hover:text-white transition"><i class="fa-solid fa-globe mr-2"></i>nexus-global.tech</a></li>
+                        <li><i class="fa-solid fa-phone mr-2"></i>+90 553 572 77 76</li>
                         <li><i class="fa-solid fa-location-dot mr-2"></i>Deutschland</li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-800 pt-8 text-center">
                 <p class="text-gray-400 text-sm">
-                    Copyright © 2025 NSTech GmbH | 
+                    Copyright © 2025 Nexus Global Certificate | 
                     <a href="datenschutz.html" class="hover:text-white transition">Datenschutz</a> | 
                     <a href="impressum.html" class="hover:text-white transition">Impressum</a>
                 </p>
@@ -686,6 +708,18 @@
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         }
+
+        // Language Dropdown Toggle
+        function toggleLangMenu() {
+            const dropdown = document.getElementById('lang-dropdown');
+            if (dropdown) dropdown.classList.toggle('hidden');
+        }
+        document.addEventListener('click', function(e) {
+            const dropdown = document.getElementById('lang-dropdown');
+            if (dropdown && !e.target.closest('[onclick*="toggleLangMenu"]') && !e.target.closest('#lang-dropdown')) {
+                dropdown.classList.add('hidden');
+            }
+        });
     </script>
 
     <style>#nstech-chat-btn{position:fixed;bottom:20px;right:20px;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#0056b3,#003d82);border:none;color:#fff;font-size:24px;cursor:pointer;box-shadow:0 4px 12px rgba(0,86,179,.4);z-index:9999;transition:all .3s}#nstech-chat-btn:hover{transform:scale(1.1);box-shadow:0 6px 16px rgba(0,86,179,.6)}#nstech-chat-modal{display:none;position:fixed;bottom:90px;right:20px;width:400px;height:600px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.3);z-index:9998;overflow:hidden}#nstech-chat-modal iframe{width:100%;height:100%;border:none;border-radius:12px}@media (max-width:500px){#nstech-chat-modal{width:100%;height:100%;bottom:0;right:0;border-radius:0}}</style><button id="nstech-chat-btn" onclick="toggleNSTechChat()" aria-label="Chat öffnen">💬</button><div id="nstech-chat-modal"><iframe src="chatbot.html"></iframe></div><script>function toggleNSTechChat(){const modal=document.getElementById('nstech-chat-modal');const btn=document.getElementById('nstech-chat-btn');if(modal.style.display==='none'||modal.style.display===''){modal.style.display='block';btn.textContent='✕'}else{modal.style.display='none';btn.textContent='💬'}}document.addEventListener('keydown',e=>{if(e.key==='Escape'){const modal=document.getElementById('nstech-chat-modal');if(modal.style.display==='block'){toggleNSTechChat()}}})</script>

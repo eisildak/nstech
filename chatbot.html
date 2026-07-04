@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NSTech AI Support Chat</title>
+    <title>Nexus Global Certificate AI Support Chat</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -279,14 +279,14 @@
                 🤖
             </div>
             <div class="chat-header-info">
-                <h2>NSTech Support</h2>
+                <h2>Nexus Global Certificate Support</h2>
                 <p>QA Testing & ISO Zertifizierung</p>
             </div>
         </div>
 
         <!-- Quick Replies -->
         <div class="quick-replies" id="quickReplies">
-            <div class="quick-reply" onclick="sendQuickReply('Was bietet NSTech an?')">
+            <div class="quick-reply" onclick="sendQuickReply('Was bietet Nexus Global Certificate an?')">
                 🏢 Services
             </div>
             <div class="quick-reply" onclick="sendQuickReply('ISO 9001 Zertifizierung Info')">
@@ -305,7 +305,7 @@
             <div class="message bot">
                 <div class="message-avatar">🤖</div>
                 <div class="message-content">
-                    Hallo! 👋 Ich bin der NSTech AI-Assistent. Wie kann ich Ihnen bei QA Testing oder ISO-Zertifizierung helfen?
+                    Hallo! 👋 Ich bin der Nexus Global Certificate AI-Assistent. Wie kann ich Ihnen bei QA Testing oder ISO-Zertifizierung helfen?
                 </div>
             </div>
         </div>
@@ -333,16 +333,16 @@
         const GEMINI_API_KEY = 'YOUR_API_KEY_HERE'; // ⚠️ NICHT committen!
         const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
 
-        // System Prompt für NSTech
-        const SYSTEM_PROMPT = `Du bist der offizielle AI-Assistent von NSTech GmbH, einem führenden Anbieter für Software QA Consulting und ISO-Zertifizierung in Deutschland.
+        // System Prompt für Nexus Global Certificate
+        const SYSTEM_PROMPT = `Du bist der offizielle AI-Assistent von Nexus Global Certificate, einem führenden Anbieter für Software QA Consulting und ISO-Zertifizierung in Deutschland.
 
 UNTERNEHMENSINFORMATIONEN:
 - 13+ Jahre Erfahrung in QA Beratung
 - 150+ erfolgreich abgeschlossene Projekte
 - 100% ISTQB-zertifizierte QA-Experten
 - Standort: Deutschland (DSGVO-konform)
-- Kontakt: info@nstech.de
-- Website: https://nstech.de
+- Kontakt: info@certificate.nexus-global.tech
+- Website: https://nexus-global.tech
 
 QA TESTING SERVICES:
 1. QA-Prozessverbesserung (2-4 Wochen)
@@ -370,7 +370,7 @@ TOOLS & TECHNOLOGIEN:
 
 ANWEISUNGEN:
 1. Antworte professionell und hilfsbereit
-2. Bei Preisfragen: "Für ein individuelles Angebot kontaktieren Sie uns unter info@nstech.de"
+2. Bei Preisfragen: "Für ein individuelles Angebot kontaktieren Sie uns unter info@certificate.nexus-global.tech"
 3. Empfehle bei Interesse Kontaktaufnahme
 4. Antworte auf Deutsch, außer User schreibt Englisch
 5. Sei präzise aber freundlich
@@ -407,7 +407,7 @@ Halte Antworten kurz (2-4 Sätze), außer detaillierte Erklärung gewünscht.`;
                 addMessage(response, 'bot');
             } catch (error) {
                 showTyping(false);
-                addMessage('Entschuldigung, es gab einen Fehler. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt unter info@nstech.de', 'bot');
+                addMessage('Entschuldigung, es gab einen Fehler. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt unter info@certificate.nexus-global.tech', 'bot');
                 console.error('Gemini API Error:', error);
             }
 

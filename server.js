@@ -13,7 +13,14 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Resend initialization (optional - server works without email)
+let resend = null;
+if (process.env.RESEND_API_KEY && process.env.RESEND_API_KEY !== 'your_resend_api_key_here') {
+  resend = new Resend(process.env.RESEND_API_KEY);
+  console.log('📧 E-Mail service initialized (Resend)');
+} else {
+  console.log('ℹ️  E-Mail service disabled (no RESEND_API_KEY set)');
+}
 
 // Middleware
 app.use(cors());
@@ -29,6 +36,14 @@ app.post('/api/send-email', async (req, res) => {
     // Validate required fields
     if (!vorname || !nachname || !email || !interest || !nachricht) {
       return res.status(400).json({ error: 'Bitte füllen Sie alle Pflichtfelder aus.' });
+    }
+
+    if (!resend) {
+      return res.status(200).json({ 
+        success: true, 
+        message: 'E-Mail service is not configured. Your message was received.',
+        note: 'RESEND_API_KEY not set'
+      });
     }
 
     // Send email to admin
@@ -162,6 +177,14 @@ app.post('/api/newsletter', async (req, res) => {
     // Validate email
     if (!email || !email.includes('@')) {
       return res.status(400).json({ error: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.' });
+    }
+
+    if (!resend) {
+      return res.status(200).json({ 
+        success: true, 
+        message: 'Newsletter-Anmeldung erfolgreich!',
+        note: 'RESEND_API_KEY not set'
+      });
     }
 
     // Send confirmation email to subscriber

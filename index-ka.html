@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Global Certificate - ხარისხის უზრუნველყოფა და ISO სერტიფიცირება</title>
+    <meta name="description" content="Nexus Global Certificate გთავაზობთ პროგრამული ტესტირებისა და ISO სერტიფიცირების მომსახურებებს. GDPR-თან შესაბამისი.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { nstech: { blue: '#0056b3', dark: '#1a1a1a', light: '#f4f7f6', accent: '#00d2d3', green: '#22c55e' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { overflow-x: hidden; max-width: 100vw; }
+        *, *::before, *::after { box-sizing: border-box; }
+        img, video, canvas, svg { max-width: 100%; height: auto; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; overflow-x: hidden; max-width: 100vw; }
+        .hero-bg { background: linear-gradient(135deg, #0056b3 0%, #002b5e 100%); position: relative; overflow: hidden; }
+        .hero-pattern { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 30px 30px; opacity: 0.5; }
+        .service-card { transition: all 0.3s ease; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        .stat-card { transition: all 0.3s ease; }
+        .stat-card:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="text-gray-800 bg-white">
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 sm:h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index-ka.html" class="flex items-center gap-3">
+                        <img src="assets/logo.svg" alt="Nexus Global Certificate Logo" class="h-10 sm:h-12 md:h-12 rounded-xl flex-shrink-0">
+                        <div class="flex flex-col">
+                            <span class="text-nstech-blue font-bold text-sm sm:text-base md:text-lg leading-tight whitespace-nowrap">Nexus Global Certificate</span>
+                            <span class="text-yellow-500 text-[10px] sm:text-xs leading-tight whitespace-nowrap">ხარისხი. ნდობა. მომავალი.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden lg:flex space-x-8 items-center">
+                    <a href="index-ka.html" class="text-nstech-blue font-semibold border-b-2 border-nstech-blue pb-1">მთავარი</a>
+                    <a href="leistungen.html" class="text-gray-600 hover:text-nstech-blue font-medium transition border-b-2 border-transparent pb-1">QA ტესტირება</a>
+                    <a href="iso-zertifizierung.html" class="text-gray-600 hover:text-nstech-blue font-medium transition border-b-2 border-transparent pb-1">ISO სერტიფიცირება</a>
+                    <a href="uber-uns.html" class="text-gray-600 hover:text-nstech-blue font-medium transition border-b-2 border-transparent pb-1">ჩვენს შესახებ</a>
+                    <a href="karriere.html" class="text-gray-600 hover:text-nstech-blue font-medium transition border-b-2 border-transparent pb-1">კარიერა</a>
+                    <a href="kontakt.html" class="text-gray-600 hover:text-nstech-blue font-medium transition border-b-2 border-transparent pb-1">კონტაქტი</a>
+                    <!-- Language Selector -->
+                    <div class="relative ml-4">
+                        <button onclick="toggleLangMenu()" class="flex items-center text-gray-600 hover:text-nstech-blue focus:outline-none">
+                            <i class="fa-solid fa-globe mr-1"></i> <span>KA</span> <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                        </button>
+                        <div id="lang-dropdown" class="absolute right-0 mt-2 w-36 bg-white border border-gray-200 rounded-md shadow-lg hidden z-50">
+                            <a href="index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>
+                            <a href="index-en.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+                            <a href="index-tr.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Türkçe</a>
+                            <a href="index-ar.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+                            <a href="index-ka.html" class="block px-4 py-2 text-sm text-white bg-nstech-blue">ქართული</a>
+                            <a href="index-ha.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Hausa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-gray-600 hover:text-nstech-blue focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-lg">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="index-ka.html" class="block px-4 py-3 rounded-md text-base font-medium text-nstech-blue bg-blue-50">მთავარი</a>
+                <a href="leistungen.html" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-nstech-blue hover:bg-gray-50">QA ტესტირება</a>
+                <a href="iso-zertifizierung.html" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-nstech-blue hover:bg-gray-50">ISO სერტიფიცირება</a>
+                <a href="uber-uns.html" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-nstech-blue hover:bg-gray-50">ჩვენს შესახებ</a>
+                <a href="karriere.html" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-nstech-blue hover:bg-gray-50">კარიერა</a>
+                <a href="kontakt.html" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-nstech-blue hover:bg-gray-50">კონტაქტი</a>
+                <div class="flex justify-center space-x-4 px-4 py-3 border-t border-gray-200 mt-2">
+                    <a href="index-ka.html" class="text-sm font-bold text-nstech-blue">KA</a>
+                    <a href="index-en.html" class="text-sm font-bold text-gray-600 hover:text-nstech-blue">EN</a>
+                    <a href="index.html" class="text-sm font-bold text-gray-600 hover:text-nstech-blue">DE</a>
+                    <a href="index-tr.html" class="text-sm font-bold text-gray-600 hover:text-nstech-blue">TR</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-bg pt-24 sm:pt-32 pb-20 sm:pb-28 text-white">
+        <div class="hero-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-3/5 text-center lg:text-left">
+                    <div class="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-semibold mb-6">
+                        <i class="fa-solid fa-shield-halved mr-2"></i>GDPR-თან შესაბამისი • ISO სერტიფიცირებული
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+                        დადასტურებული ექსპერტიზა <span class="text-nstech-accent">პროგრამული</span> ხარისხის უზრუნველყოფაში
+                    </h1>
+                    <p class="text-base sm:text-lg lg:text-xl text-blue-100 mb-8 leading-relaxed">
+                        Nexus Global Certificate არის თქვენი სტრატეგიული პარტნიორი პროგრამული ტესტირებისა და ISO სერტიფიცირებისთვის.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="kontakt.html" class="px-8 py-4 bg-white text-nstech-blue rounded-full font-bold hover:bg-gray-100 transition shadow-lg text-center">დაჯავშნეთ კონსულტაცია</a>
+                        <a href="leistungen.html" class="px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-nstech-blue transition text-center">ჩვენი სერვისები</a>
+                    </div>
+                </div>
+                <div class="lg:w-2/5 flex justify-center">
+                    <div class="relative">
+                        <div class="w-56 h-56 sm:w-72 sm:h-72 bg-white/10 backdrop-blur-sm rounded-3xl flex items-center justify-center transform rotate-6 hover:rotate-0 transition duration-500">
+                            <i class="fa-solid fa-certificate text-7xl sm:text-9xl text-white opacity-80"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="py-16 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-6 text-center">
+                <div class="stat-card p-6"><div class="text-3xl font-bold text-nstech-blue mb-2">13+</div><p class="text-gray-600 text-sm">წლიანი გამოცდილება</p></div>
+                <div class="stat-card p-6"><div class="text-3xl font-bold text-nstech-blue mb-2">200+</div><p class="text-gray-600 text-sm">დასრულებული პროექტი</p></div>
+                <div class="stat-card p-6"><div class="text-3xl font-bold text-nstech-blue mb-2">50+</div><p class="text-gray-600 text-sm">კმაყოფილი კლიენტი</p></div>
+                <div class="stat-card p-6"><div class="text-3xl font-bold text-nstech-blue mb-2">ISO</div><p class="text-gray-600 text-sm">9001/27001 სერტიფიცირებული</p></div>
+                <div class="stat-card p-6"><div class="text-3xl font-bold text-nstech-blue mb-2">GDPR</div><p class="text-gray-600 text-sm">სრული შესაბამისობა</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="py-20 bg-nstech-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16"><h2 class="text-3xl font-bold text-nstech-dark mb-4">ჩვენი სერვისები</h2><p class="text-gray-600 text-lg">ყოვლისმომცველი QA და ISO სერტიფიცირების გადაწყვეტილებები</p></div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-8 rounded-2xl shadow-md"><i class="fa-solid fa-magnifying-glass text-4xl text-nstech-blue mb-4"></i><h3 class="text-xl font-bold mb-3">QA კონსულტაცია</h3><p class="text-gray-600">მორგებული ტესტირების სტრატეგიები თქვენი ბიზნეს მიზნებისთვის.</p></div>
+                <div class="service-card bg-white p-8 rounded-2xl shadow-md"><i class="fa-solid fa-gears text-4xl text-nstech-blue mb-4"></i><h3 class="text-xl font-bold mb-3">მართული ტესტირება</h3><p class="text-gray-600">სრული ტესტირების გადაწყვეტილებები დეტალური ანგარიშებით.</p></div>
+                <div class="service-card bg-white p-8 rounded-2xl shadow-md"><i class="fa-solid fa-file-shield text-4xl text-nstech-blue mb-4"></i><h3 class="text-xl font-bold mb-3">ISO სერტიფიცირება</h3><p class="text-gray-600">ექსპერტული ხელმძღვანელობა ISO 9001 & 27001 სერტიფიკატებისთვის.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-gradient-to-r from-nstech-blue to-blue-700 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6">მზად ხართ გააუმჯობესოთ თქვენი პროგრამული ხარისხი?</h2>
+            <p class="text-lg mb-8 text-blue-100">დაჯავშნეთ უფასო კონსულტაცია და გაიგეთ, როგორ შეგვიძლია დაგეხმაროთ.</p>
+            <a href="kontakt.html" class="inline-block px-10 py-4 bg-white text-nstech-blue rounded-full font-bold hover:bg-gray-100 transition shadow-xl text-lg">უფასო კონსულტაცია</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <img src="assets/logo.svg" alt="Nexus Global Certificate Logo" class="h-16 sm:h-20 mb-3 rounded-xl">
+                    <h3 class="text-white font-bold text-base sm:text-lg mb-1">Nexus Global Certificate</h3>
+                    <p class="text-yellow-500 text-xs sm:text-sm mb-3">ხარისხი. ნდობა. მომავალი.</p>
+                    <p class="text-gray-400 text-sm">თქვენი პარტნიორი პროგრამული ხარისხისა და ISO შესაბამისობისთვის.</p>
+                </div>
+                <div><h4 class="text-lg font-bold mb-4">სერვისები</h4><ul class="space-y-2 text-gray-400 text-sm"><li><a href="leistungen.html" class="hover:text-white transition">QA კონსულტაცია</a></li><li><a href="leistungen.html" class="hover:text-white transition">მართული ტესტირება</a></li><li><a href="leistungen.html" class="hover:text-white transition">ISO სერტიფიცირება</a></li><li><a href="leistungen.html" class="hover:text-white transition">ტესტის ავტომატიზაცია</a></li></ul></div>
+                <div><h4 class="text-lg font-bold mb-4">კომპანია</h4><ul class="space-y-2 text-gray-400 text-sm"><li><a href="uber-uns.html" class="hover:text-white transition">ჩვენს შესახებ</a></li><li><a href="karriere.html" class="hover:text-white transition">კარიერა</a></li><li><a href="blog/" target="_blank" class="hover:text-white transition">ბლოგი</a></li></ul></div>
+                <div><h4 class="text-lg font-bold mb-4">კონტაქტი</h4><ul class="space-y-2 text-gray-400 text-sm"><li><i class="fa-solid fa-envelope mr-2"></i>info@certificate.nexus-global.tech</li><li><a href="https://nexus-global.tech/en/" target="_blank" class="hover:text-white transition"><i class="fa-solid fa-globe mr-2"></i>nexus-global.tech</a></li><li><i class="fa-solid fa-phone mr-2"></i>+90 553 572 77 76</li><li><i class="fa-solid fa-location-dot mr-2"></i>გერმანია</li></ul></div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col lg:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 lg:mb-0">Copyright © 2025 Nexus Global Certificate | ყველა უფლება დაცულია</p>
+                <div class="flex space-x-6">
+                    <a href="datenschutz.html" class="text-gray-400 hover:text-white text-sm transition">კონფიდენციალურობა</a>
+                    <a href="impressum.html" class="text-gray-400 hover:text-white text-sm transition">იმპრესუმი</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+
+        function toggleLangMenu() {
+            const d = document.getElementById('lang-dropdown');
+            if (d) d.classList.toggle('hidden');
+        }
+        document.addEventListener('click', function(e) {
+            const d = document.getElementById('lang-dropdown');
+            if (d && !e.target.closest('[onclick*="toggleLangMenu"]') && !e.target.closest('#lang-dropdown')) {
+                d.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

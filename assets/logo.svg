@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a365d"/>
+      <stop offset="100%" stop-color="#0f1f3a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square with gradient -->
+  <rect width="200" height="200" rx="32" fill="url(#bg-grad)"/>
+
+  <!-- Top glow -->
+  <rect width="200" height="100" rx="32" fill="url(#glow)"/>
+
+  <!-- Subtle border -->
+  <rect x="1" y="1" width="198" height="198" rx="31" stroke="#c9a84c" stroke-opacity="0.2" stroke-width="2"/>
+
+  <!-- Compass rose / Global network ring -->
+  <circle cx="100" cy="100" r="56" stroke="#c9a84c" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="100" cy="100" r="48" stroke="#c9a84c" stroke-width="1" fill="none" opacity="0.2" stroke-dasharray="4 6"/>
+
+  <!-- Compass cross axes -->
+  <line x1="100" y1="40" x2="100" y2="160" stroke="#c9a84c" stroke-width="1.5" opacity="0.25"/>
+  <line x1="40" y1="100" x2="160" y2="100" stroke="#c9a84c" stroke-width="1.5" opacity="0.25"/>
+  <line x1="57" y1="57" x2="143" y2="143" stroke="#c9a84c" stroke-width="1" opacity="0.15"/>
+  <line x1="143" y1="57" x2="57" y2="143" stroke="#c9a84c" stroke-width="1" opacity="0.15"/>
+
+  <!-- Cardinal direction arrows (N S E W markers) -->
+  <polygon points="100,42 97,50 103,50" fill="#c9a84c" opacity="0.5"/>
+  <polygon points="100,158 97,150 103,150" fill="#c9a84c" opacity="0.3"/>
+  <polygon points="42,100 50,97 50,103" fill="#c9a84c" opacity="0.3"/>
+  <polygon points="158,100 150,97 150,103" fill="#c9a84c" opacity="0.3"/>
+
+  <!-- Stylized N letter -->
+  <path d="M68 132V68L132 132V68" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Accent dot -->
+  <circle cx="100" cy="100" r="6" fill="#c9a84c"/>
+</svg>
