@@ -1,4 +1,4 @@
-# NSTech Website - Mail Altyapısı
+# Nexus Global Website - Mail Altyapısı
 
 Bu proje Resend API kullanarak iletişim formu e-posta entegrasyonu içerir.
 
@@ -52,7 +52,7 @@ Sunucu `http://localhost:3000` adresinde çalışacak.
 ## Dosya Yapısı
 
 ```
-nstech/
+Nexus Global/
 ├── api/
 │   └── send-email.js       # Serverless function (opsiyonel)
 ├── assets/                 # Görseller
@@ -96,8 +96,8 @@ Response:
 Kendi domain'inizi eklemek için:
 1. [Resend Dashboard](https://resend.com/domains) 'a gidin
 2. Domain ekleyin ve DNS kayıtlarını yapılandırın
-3. `server.js` dosyasında `from:` alanını güncelleyin: `'NSTech <noreply@yourdomain.com>'`
+3. `server.js` dosyasında `from:` alanını güncelleyin: `'Nexus Global <noreply@yourdomain.com>'`
 
 ## Lisans
 
-© 2025 NSTech Software & Consultancy
+© 2025 Nexus Global Software & Consultancy

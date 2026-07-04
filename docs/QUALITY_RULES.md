@@ -1,14 +1,14 @@
-# NSTech Website - Qualitätssicherungsregeln
+# Nexus Global Website - Qualitätssicherungsregeln
 
 Version: 2.0  
 Datum: 17. Januar 2026  
-Verantwortlich: NSTech Development Team
+Verantwortlich: Nexus Global Development Team
 
 ---
 
 ## 📋 Übersicht
 
-Dieses Dokument definiert die verbindlichen Qualitätsregeln für die NSTech Website. Jede Änderung MUSS diese Regeln erfüllen, bevor sie deployed wird.
+Dieses Dokument definiert die verbindlichen Qualitätsregeln für die Nexus Global Website. Jede Änderung MUSS diese Regeln erfüllen, bevor sie deployed wird.
 
 **KRITISCH**: Nach dem API Key Security Incident vom 17.01.2026 wurde REGEL 3 hinzugefügt.
 
@@ -197,7 +197,7 @@ Diese Regel gilt für:
 #### Automatische Tests:
 ```bash
 # Lighthouse CI für Mobile Performance
-npx lighthouse https://nstech.de --only-categories=performance --preset=mobile --quiet
+npx lighthouse https://Nexus Global.de --only-categories=performance --preset=mobile --quiet
 
 # Responsive Image Check
 grep -r 'max-w-full\|w-full' *.html | wc -l
@@ -347,15 +347,15 @@ feat: Add ISTQB logo to stats section
 ```bash
 # Broken Links finden
 npm install -g broken-link-checker
-blc https://nstech.de -ro
+blc https://Nexus Global.de -ro
 
 # Lighthouse CI
 npm install -g @lhci/cli
-lhci autorun --collect.url=https://nstech.de
+lhci autorun --collect.url=https://Nexus Global.de
 
 # Accessibility Check
 npm install -g pa11y
-pa11y https://nstech.de
+pa11y https://Nexus Global.de
 ```
 
 ---
@@ -387,7 +387,7 @@ pa11y https://nstech.de
 
 | Datum | Version | Änderung | Autor |
 |-------|---------|----------|-------|
-| 17.01.2025 | 1.0 | Initiale Erstellung der Quality Rules | NSTech Dev Team |
+| 17.01.2025 | 1.0 | Initiale Erstellung der Quality Rules | Nexus Global Dev Team |
 
 ---
 
@@ -513,7 +513,7 @@ fi
 #### Struktur:
 ```env
 # ============================================
-# NSTech API Configuration
+# Nexus Global API Configuration
 # ============================================
 # WICHTIG: Diese Datei NIEMALS committen!
 # Kopiere .env.example und fülle deine Keys ein
@@ -639,7 +639,7 @@ Diese Regel gilt für:
   - **EN**: Home, QA Testing, ISO Certification, About Us, Career, Contact
 - [ ] Active-State verändert NICHT die Box-Model Größe:
   - **Lösung**: Inaktive Links erhalten `border-transparent` und gleiches Padding wie aktive Links
-  - Aktiv: `border-b-2 border-nstech-blue pb-1`
+  - Aktiv: `border-b-2 border-Nexus Global-blue pb-1`
   - Inaktiv: `border-b-2 border-transparent pb-1`
 - [ ] Logo-Größe und Position sind auf allen Seiten Pixel-perfekt identisch
 
@@ -665,8 +665,8 @@ diff <(sed -n '/<nav/,/<\/nav>/p' index.html) <(sed -n '/<nav/,/<\/nav>/p' uber-
 ## 📞 Verantwortlichkeiten
 
 - **Content (DE/EN)**: Erol Işıldak
-- **Development**: NSTech Dev Team
-- **QA Testing**: NSTech QA Team
+- **Development**: Nexus Global Dev Team
+- **QA Testing**: Nexus Global QA Team
 - **Security**: Erol Işıldak + Dev Team
 - **Deployment**: DevOps Team
 

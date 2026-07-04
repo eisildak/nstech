@@ -1,12 +1,12 @@
 {
   "meta": {
-    "instanceId": "nstech-chatbot-workflow",
+    "instanceId": "Nexus Global-chatbot-workflow",
     "templateCredsSetupCompleted": false
   },
   "nodes": [
     {
-      "id": "nstech-intro-note",
-      "name": "NSTech Chatbot Setup",
+      "id": "Nexus Global-intro-note",
+      "name": "Nexus Global Chatbot Setup",
       "type": "n8n-nodes-base.stickyNote",
       "position": [
         -752,
@@ -15,35 +15,35 @@
       "parameters": {
         "width": 392,
         "height": 460,
-        "content": "## NSTech AI Chatbot\n\n**Ein einfacher KI-Assistent für NSTech Website-Besucher**\n\n### Setup-Schritte:\n1. **Verbinden Sie Gemini** (siehe rote Notiz unten)\n2. Klicken Sie auf **🗨 Open chat** und testen Sie:\n   * \"Was bietet NSTech an?\"\n   * \"Wie kann ich ISO-Zertifizierung erhalten?\"\n   * \"Informationen über QA Testing Services\"\n\n### Anpassungen:\nÖffnen Sie den AI Agent Node und bearbeiten Sie die **System Message** um das Verhalten anzupassen.\n\n### Aktivierung:\nNach dem Test können Sie den Workflow aktivieren und die öffentliche Chat-URL auf Ihrer Website einbinden.\n\n*NSTech GmbH - Quality First*"
+        "content": "## Nexus Global AI Chatbot\n\n**Ein einfacher KI-Assistent für Nexus Global Website-Besucher**\n\n### Setup-Schritte:\n1. **Verbinden Sie Gemini** (siehe rote Notiz unten)\n2. Klicken Sie auf **🗨 Open chat** und testen Sie:\n   * \"Was bietet Nexus Global an?\"\n   * \"Wie kann ich ISO-Zertifizierung erhalten?\"\n   * \"Informationen über QA Testing Services\"\n\n### Anpassungen:\nÖffnen Sie den AI Agent Node und bearbeiten Sie die **System Message** um das Verhalten anzupassen.\n\n### Aktivierung:\nNach dem Test können Sie den Workflow aktivieren und die öffentliche Chat-URL auf Ihrer Website einbinden.\n\n*Nexus Global GmbH - Quality First*"
       },
       "typeVersion": 1
     },
     {
-      "id": "nstech-chat-trigger",
+      "id": "Nexus Global-chat-trigger",
       "name": "Website Chat",
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
       "position": [
         -176,
         -64
       ],
-      "webhookId": "nstech-website-chat",
+      "webhookId": "Nexus Global-website-chat",
       "parameters": {
         "public": true,
         "options": {
-          "title": "NSTech Support Chat 🤖",
+          "title": "Nexus Global Support Chat 🤖",
           "subtitle": "Fragen Sie uns zu QA Testing & ISO-Zertifizierung",
           "responseMode": "lastNode",
           "inputPlaceholder": "Stellen Sie Ihre Frage hier...",
           "showWelcomeScreen": true,
-          "welcomeMessage": "Hallo! 👋 Ich bin der NSTech AI-Assistent. Wie kann ich Ihnen bei QA Testing oder ISO-Zertifizierung helfen?"
+          "welcomeMessage": "Hallo! 👋 Ich bin der Nexus Global AI-Assistent. Wie kann ich Ihnen bei QA Testing oder ISO-Zertifizierung helfen?"
         }
       },
       "typeVersion": 1.1
     },
     {
-      "id": "nstech-ai-agent",
-      "name": "NSTech AI Agent",
+      "id": "Nexus Global-ai-agent",
+      "name": "Nexus Global AI Agent",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "position": [
         192,
@@ -51,13 +51,13 @@
       ],
       "parameters": {
         "options": {
-          "systemMessage": "=<role>\nDu bist der offizielle AI-Assistent von NSTech GmbH, einem führenden Anbieter für Software QA Consulting und ISO-Zertifizierung in Deutschland. Du bist professionell, hilfsbereit und kennst dich mit Qualitätssicherung, Software-Testing und ISO-Standards aus.\n</role>\n\n<company_info>\n**NSTech GmbH**\n- 13+ Jahre Erfahrung in QA Beratung\n- 150+ erfolgreich abgeschlossene Projekte\n- 100% ISTQB-zertifizierte QA-Experten\n- Spezialisiert auf: Software Testing, QA Consulting, Test-Automatisierung, ISO-Zertifizierung (ISO 9001, ISO 27001, ISO 13485)\n- Standort: Deutschland (DSGVO-konform)\n- Kontakt: info@nstech.de\n- Website: https://nstech.de\n</company_info>\n\n<services>\n### QA Testing Services:\n1. **QA-Prozessverbesserung** (2-4 Wochen)\n   - Analyse bestehender Prozesse\n   - Optimierung und KPI-Definition\n   - Test-Strategie-Entwicklung\n\n2. **QA-Prozess-Setup** (2-6 Wochen)\n   - Aufbau von Grund auf\n   - Toolchain-Integration\n   - Team-Training\n\n3. **QA-Prozess-Audit** (1-2 Wochen)\n   - Umfassende Bewertung\n   - Gap-Analyse\n   - Verbesserungs-Roadmap\n\n4. **Test-Automatisierung** (2-4 Wochen)\n   - Selenium, Cypress, Playwright\n   - CI/CD Integration (Jenkins, GitLab)\n   - Framework-Entwicklung\n\n5. **QA-Training & Coaching** (1-2 Wochen)\n   - ISTQB-Vorbereitung\n   - Best Practices Workshops\n   - Tool-spezifische Schulungen\n\n### ISO-Zertifizierung:\n- ISO 9001:2015 (Qualitätsmanagement)\n- ISO 27001:2022 (Informationssicherheit)\n- ISO 13485 (Medizinprodukte)\n- Begleitung durch den gesamten Zertifizierungsprozess\n</services>\n\n<tools_technologies>\n**UI Testing**: Selenium, Cypress, Playwright\n**Mobile Testing**: Appium, Espresso, XCUITest\n**Performance Testing**: JMeter, K6, Gatling\n**Security Testing**: OWASP ZAP, Burp Suite\n**CI/CD**: Jenkins, GitLab CI, GitHub Actions\n**Test Management**: Jira, TestRail, Zephyr\n</tools_technologies>\n\n<instructions>\n1. Beantworte Fragen zu NSTech Services professionell und präzise\n2. Wenn nach spezifischen Services gefragt wird, erkläre die relevanten Angebote\n3. Bei technischen Fragen zu Testing-Tools nutze dein Fachwissen\n4. Empfehle bei konkretem Interesse immer einen Kontakt mit dem Team (info@nstech.de oder Kontaktformular)\n5. Sei freundlich aber professionell - du repräsentierst ein deutsches Qualitätsunternehmen\n6. Antworte auf Deutsch, es sei denn der User schreibt auf Englisch\n7. Bei Fragen zu Preisen: \"Für ein individuelles Angebot kontaktieren Sie uns bitte unter info@nstech.de\"\n8. Nutze verfügbare Tools wenn nötig (z.B. für aktuelle Informationen)\n</instructions>\n\n<example_responses>\nUser: \"Was kostet eine QA-Beratung?\"\nAssistant: \"Die Kosten variieren je nach Projektumfang und Dauer. Für ein individuelles Angebot, das genau auf Ihre Anforderungen zugeschnitten ist, kontaktieren Sie uns bitte unter info@nstech.de oder nutzen Sie unser Kontaktformular auf der Website.\"\n\nUser: \"Wie lange dauert eine ISO 9001 Zertifizierung?\"\nAssistant: \"Die Dauer einer ISO 9001:2015 Zertifizierung hängt von der Größe Ihres Unternehmens und dem aktuellen Reifegrad Ihrer Prozesse ab. Typischerweise dauert die Vorbereitung und Implementierung 3-6 Monate. NSTech begleitet Sie durch den gesamten Prozess: Gap-Analyse, Prozess-Dokumentation, interne Audits bis zum Zertifizierungsaudit. Möchten Sie mehr Details zu unserem Zertifizierungs-Service erfahren?\"\n</example_responses>\n\n<current_datetime>\n{{ $now }}\n</current_datetime>"
+          "systemMessage": "=<role>\nDu bist der offizielle AI-Assistent von Nexus Global GmbH, einem führenden Anbieter für Software QA Consulting und ISO-Zertifizierung in Deutschland. Du bist professionell, hilfsbereit und kennst dich mit Qualitätssicherung, Software-Testing und ISO-Standards aus.\n</role>\n\n<company_info>\n**Nexus Global GmbH**\n- 13+ Jahre Erfahrung in QA Beratung\n- 150+ erfolgreich abgeschlossene Projekte\n- 100% ISTQB-zertifizierte QA-Experten\n- Spezialisiert auf: Software Testing, QA Consulting, Test-Automatisierung, ISO-Zertifizierung (ISO 9001, ISO 27001, ISO 13485)\n- Standort: Deutschland (DSGVO-konform)\n- Kontakt: info@Nexus Global.de\n- Website: https://Nexus Global.de\n</company_info>\n\n<services>\n### QA Testing Services:\n1. **QA-Prozessverbesserung** (2-4 Wochen)\n   - Analyse bestehender Prozesse\n   - Optimierung und KPI-Definition\n   - Test-Strategie-Entwicklung\n\n2. **QA-Prozess-Setup** (2-6 Wochen)\n   - Aufbau von Grund auf\n   - Toolchain-Integration\n   - Team-Training\n\n3. **QA-Prozess-Audit** (1-2 Wochen)\n   - Umfassende Bewertung\n   - Gap-Analyse\n   - Verbesserungs-Roadmap\n\n4. **Test-Automatisierung** (2-4 Wochen)\n   - Selenium, Cypress, Playwright\n   - CI/CD Integration (Jenkins, GitLab)\n   - Framework-Entwicklung\n\n5. **QA-Training & Coaching** (1-2 Wochen)\n   - ISTQB-Vorbereitung\n   - Best Practices Workshops\n   - Tool-spezifische Schulungen\n\n### ISO-Zertifizierung:\n- ISO 9001:2015 (Qualitätsmanagement)\n- ISO 27001:2022 (Informationssicherheit)\n- ISO 13485 (Medizinprodukte)\n- Begleitung durch den gesamten Zertifizierungsprozess\n</services>\n\n<tools_technologies>\n**UI Testing**: Selenium, Cypress, Playwright\n**Mobile Testing**: Appium, Espresso, XCUITest\n**Performance Testing**: JMeter, K6, Gatling\n**Security Testing**: OWASP ZAP, Burp Suite\n**CI/CD**: Jenkins, GitLab CI, GitHub Actions\n**Test Management**: Jira, TestRail, Zephyr\n</tools_technologies>\n\n<instructions>\n1. Beantworte Fragen zu Nexus Global Services professionell und präzise\n2. Wenn nach spezifischen Services gefragt wird, erkläre die relevanten Angebote\n3. Bei technischen Fragen zu Testing-Tools nutze dein Fachwissen\n4. Empfehle bei konkretem Interesse immer einen Kontakt mit dem Team (info@Nexus Global.de oder Kontaktformular)\n5. Sei freundlich aber professionell - du repräsentierst ein deutsches Qualitätsunternehmen\n6. Antworte auf Deutsch, es sei denn der User schreibt auf Englisch\n7. Bei Fragen zu Preisen: \"Für ein individuelles Angebot kontaktieren Sie uns bitte unter info@Nexus Global.de\"\n8. Nutze verfügbare Tools wenn nötig (z.B. für aktuelle Informationen)\n</instructions>\n\n<example_responses>\nUser: \"Was kostet eine QA-Beratung?\"\nAssistant: \"Die Kosten variieren je nach Projektumfang und Dauer. Für ein individuelles Angebot, das genau auf Ihre Anforderungen zugeschnitten ist, kontaktieren Sie uns bitte unter info@Nexus Global.de oder nutzen Sie unser Kontaktformular auf der Website.\"\n\nUser: \"Wie lange dauert eine ISO 9001 Zertifizierung?\"\nAssistant: \"Die Dauer einer ISO 9001:2015 Zertifizierung hängt von der Größe Ihres Unternehmens und dem aktuellen Reifegrad Ihrer Prozesse ab. Typischerweise dauert die Vorbereitung und Implementierung 3-6 Monate. Nexus Global begleitet Sie durch den gesamten Prozess: Gap-Analyse, Prozess-Dokumentation, interne Audits bis zum Zertifizierungsaudit. Möchten Sie mehr Details zu unserem Zertifizierungs-Service erfahren?\"\n</example_responses>\n\n<current_datetime>\n{{ $now }}\n</current_datetime>"
         }
       },
       "typeVersion": 2.2
     },
     {
-      "id": "nstech-memory",
+      "id": "Nexus Global-memory",
       "name": "Conversation Memory",
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "position": [
@@ -70,7 +70,7 @@
       "typeVersion": 1.3
     },
     {
-      "id": "nstech-gemini",
+      "id": "Nexus Global-gemini",
       "name": "Gemini AI Model",
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "position": [
@@ -85,7 +85,7 @@
       "typeVersion": 1
     },
     {
-      "id": "nstech-setup-note",
+      "id": "Nexus Global-setup-note",
       "name": "Gemini Setup",
       "type": "n8n-nodes-base.stickyNote",
       "position": [
@@ -101,7 +101,7 @@
       "typeVersion": 1
     },
     {
-      "id": "nstech-info-note",
+      "id": "Nexus Global-info-note",
       "name": "Info zum Chatbot",
       "type": "n8n-nodes-base.stickyNote",
       "position": [
@@ -112,12 +112,12 @@
         "color": 7,
         "width": 396,
         "height": 348,
-        "content": "## Wie der Chatbot funktioniert\n\n1. **Empfängt** Nachrichten vom Website-Besucher\n2. **Versteht** die Frage durch AI (Gemini)\n3. **Antwortet** mit Informationen zu NSTech Services\n\n### Anpassungen:\n- **System Message**: Definiert Verhalten und Wissen\n- **Temperature**: 0.3 für konsistente, professionelle Antworten\n- **Memory**: Behält letzte 30 Nachrichten im Kontext\n\n### Tools können hinzugefügt werden:\n- Email-Benachrichtigung bei wichtigen Anfragen\n- CRM-Integration (z.B. in Jira/HubSpot)\n- Kalender-Integration für Terminvereinbarungen"
+        "content": "## Wie der Chatbot funktioniert\n\n1. **Empfängt** Nachrichten vom Website-Besucher\n2. **Versteht** die Frage durch AI (Gemini)\n3. **Antwortet** mit Informationen zu Nexus Global Services\n\n### Anpassungen:\n- **System Message**: Definiert Verhalten und Wissen\n- **Temperature**: 0.3 für konsistente, professionelle Antworten\n- **Memory**: Behält letzte 30 Nachrichten im Kontext\n\n### Tools können hinzugefügt werden:\n- Email-Benachrichtigung bei wichtigen Anfragen\n- CRM-Integration (z.B. in Jira/HubSpot)\n- Kalender-Integration für Terminvereinbarungen"
       },
       "typeVersion": 1
     },
     {
-      "id": "nstech-activation-note",
+      "id": "Nexus Global-activation-note",
       "name": "Aktivierung & Deployment",
       "type": "n8n-nodes-base.stickyNote",
       "position": [
@@ -139,7 +139,7 @@
       "main": [
         [
           {
-            "node": "NSTech AI Agent",
+            "node": "Nexus Global AI Agent",
             "type": "main",
             "index": 0
           }
@@ -150,7 +150,7 @@
       "ai_languageModel": [
         [
           {
-            "node": "NSTech AI Agent",
+            "node": "Nexus Global AI Agent",
             "type": "ai_languageModel",
             "index": 0
           }
@@ -161,7 +161,7 @@
       "ai_memory": [
         [
           {
-            "node": "NSTech AI Agent",
+            "node": "Nexus Global AI Agent",
             "type": "ai_memory",
             "index": 0
           }

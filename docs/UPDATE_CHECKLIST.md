@@ -1,4 +1,4 @@
-# ✅ Update Checklist - NSTech Website
+# ✅ Update Checklist - Nexus Global Website
 
 **Verwenden Sie diese Checkliste bei JEDER Änderung**
 
@@ -185,7 +185,7 @@ function toggleMobileMenu() {
 **Bei Fragen:**
 - 📖 Siehe [QUALITY_RULES.md](QUALITY_RULES.md)
 - 📗 Siehe [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
-- 📧 Team kontaktieren: dev@nstech.de
+- 📧 Team kontaktieren: dev@Nexus Global.de
 
 ---
 

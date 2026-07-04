@@ -48,7 +48,7 @@ app.post('/api/send-email', async (req, res) => {
 
     // Send email to admin
     const data = await resend.emails.send({
-      from: 'NSTech Kontakt <onboarding@resend.dev>',
+      from: 'Nexus Global Kontakt <onboarding@resend.dev>',
       to: ['erol.isildak@pointr.tech'],
       replyTo: email,
       subject: `Neue Kontaktanfrage von ${vorname} ${nachname}`,
@@ -109,7 +109,7 @@ app.post('/api/send-email', async (req, res) => {
               
               <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
               <p style="font-size: 12px; color: #666;">
-                Diese E-Mail wurde über das Kontaktformular auf nstech.de gesendet.
+                Diese E-Mail wurde über das Kontaktformular auf Nexus Global.de gesendet.
               </p>
             </div>
           </div>
@@ -120,9 +120,9 @@ app.post('/api/send-email', async (req, res) => {
 
     // Send auto-reply to customer
     await resend.emails.send({
-      from: 'NSTech <onboarding@resend.dev>',
+      from: 'Nexus Global <onboarding@resend.dev>',
       to: [email],
-      subject: 'Vielen Dank für Ihre Nachricht - NSTech',
+      subject: 'Vielen Dank für Ihre Nachricht - Nexus Global',
       html: `
         <!DOCTYPE html>
         <html>
@@ -145,7 +145,7 @@ app.post('/api/send-email', async (req, res) => {
               <p>Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.</p>
               <p>Bei dringenden Anfragen können Sie uns auch direkt telefonisch erreichen.</p>
               <hr style="margin: 20px 0;">
-              <p><strong>NSTech QA & ISO-Zertifizierung</strong><br>
+              <p><strong>Nexus Global QA & ISO-Zertifizierung</strong><br>
               📧 erol.isildak@pointr.tech<br>
               📱 +49 XXX XXXXXXX</p>
             </div>
@@ -189,9 +189,9 @@ app.post('/api/newsletter', async (req, res) => {
 
     // Send confirmation email to subscriber
     await resend.emails.send({
-      from: 'NSTech Newsletter <onboarding@resend.dev>',
+      from: 'Nexus Global Newsletter <onboarding@resend.dev>',
       to: [email],
-      subject: 'Willkommen beim NSTech Newsletter!',
+      subject: 'Willkommen beim Nexus Global Newsletter!',
       html: `
         <!DOCTYPE html>
         <html>
@@ -208,7 +208,7 @@ app.post('/api/newsletter', async (req, res) => {
         <body>
           <div class="container">
             <div class="header">
-              <h1>🎉 Willkommen beim NSTech Newsletter!</h1>
+              <h1>🎉 Willkommen beim Nexus Global Newsletter!</h1>
             </div>
             <div class="content">
               <p>Vielen Dank für Ihr Interesse an unserem Newsletter!</p>
@@ -221,7 +221,7 @@ app.post('/api/newsletter', async (req, res) => {
               </ul>
               <p>Alle Informationen sind DSGVO-konform und Sie können sich jederzeit abmelden.</p>
               <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
-              <p><strong>NSTech QA & ISO-Zertifizierung</strong><br>
+              <p><strong>Nexus Global QA & ISO-Zertifizierung</strong><br>
               Ihr Partner für Software-Qualität in Deutschland</p>
             </div>
           </div>
@@ -232,7 +232,7 @@ app.post('/api/newsletter', async (req, res) => {
 
     // Notify admin about new subscriber
     await resend.emails.send({
-      from: 'NSTech Newsletter <onboarding@resend.dev>',
+      from: 'Nexus Global Newsletter <onboarding@resend.dev>',
       to: ['erol.isildak@pointr.tech'],
       subject: 'Neue Newsletter-Anmeldung',
       html: `

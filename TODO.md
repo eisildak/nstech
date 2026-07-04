@@ -7,7 +7,7 @@
 ## 🚀 Deployment & Infrastruktur
 - [ ] **Domains & Email**: 
   - Domain-Namen finalisieren und verknüpfen.
-  - E-Mail-Adressen einrichten (z.B. info@nstech.de).
+  - E-Mail-Adressen einrichten (z.B. info@Nexus Global.de).
   - Seite "Live" schalten (Production Deployment).
 
 ## 🤖 Features & Entwicklung

@@ -1,10 +1,10 @@
-# NSTech AI Chatbot - n8n Workflow
+# Nexus Global AI Chatbot - n8n Workflow
 
-Einfacher AI-gestützter Chatbot für die NSTech Website, der Fragen zu QA Testing und ISO-Zertifizierung beantwortet.
+Einfacher AI-gestützter Chatbot für die Nexus Global Website, der Fragen zu QA Testing und ISO-Zertifizierung beantwortet.
 
 ## 🎯 Funktionen
 
-- Beantwortet Fragen zu NSTech Services (QA Testing, ISO-Zertifizierung)
+- Beantwortet Fragen zu Nexus Global Services (QA Testing, ISO-Zertifizierung)
 - Mehrsprachig (Deutsch/Englisch)
 - Conversation Memory für kontextbezogene Antworten
 - ISTQB und ISO-Expertise eingebaut
@@ -26,7 +26,7 @@ Einfacher AI-gestützter Chatbot für die NSTech Website, der Fragen zu QA Testi
 
 1. Öffnen Sie n8n
 2. Klicken Sie auf **Workflows → Import from File**
-3. Wählen Sie `nstech-chatbot.json`
+3. Wählen Sie `Nexus Global-chatbot.json`
 4. Workflow wird geladen
 
 ### Schritt 2: Gemini API konfigurieren
@@ -40,7 +40,7 @@ Einfacher AI-gestützter Chatbot für die NSTech Website, der Fragen zu QA Testi
 
 1. Klicken Sie oben rechts auf **🗨 Open chat**
 2. Testen Sie mit Fragen wie:
-   - "Was bietet NSTech an?"
+   - "Was bietet Nexus Global an?"
    - "Wie kann ich ISO 9001 Zertifizierung erhalten?"
    - "Welche Test-Automatisierung Tools nutzt ihr?"
    - "Kosten für QA Beratung?"
@@ -57,7 +57,7 @@ Einfacher AI-gestützter Chatbot für die NSTech Website, der Fragen zu QA Testi
 ```html
 <!-- In Ihre HTML-Seite einfügen -->
 <iframe 
-  src="https://YOUR-N8N-INSTANCE.com/webhook/nstech-website-chat"
+  src="https://YOUR-N8N-INSTANCE.com/webhook/Nexus Global-website-chat"
   width="100%" 
   height="600" 
   style="border: none; border-radius: 12px;">
@@ -69,8 +69,8 @@ Einfacher AI-gestützter Chatbot für die NSTech Website, der Fragen zu QA Testi
 Fügen Sie diesen Code in Ihre Website ein (z.B. vor `</body>`):
 
 ```html
-<!-- NSTech AI Chat Widget -->
-<div id="nstech-chat-widget">
+<!-- Nexus Global AI Chat Widget -->
+<div id="Nexus Global-chat-widget">
   <button id="chat-toggle" style="
     position: fixed;
     bottom: 20px;
@@ -101,7 +101,7 @@ Fügen Sie diesen Code in Ihre Website ein (z.B. vor `</body>`):
     z-index: 9998;
   ">
     <iframe 
-      src="https://YOUR-N8N-INSTANCE.com/webhook/nstech-website-chat"
+      src="https://YOUR-N8N-INSTANCE.com/webhook/Nexus Global-website-chat"
       width="100%" 
       height="100%" 
       style="border: none; border-radius: 12px;">
@@ -142,7 +142,7 @@ Fügen Sie diesen Code in Ihre Website ein (z.B. vor `</body>`):
 
 ### System Message ändern
 
-1. Öffnen Sie den Node **"NSTech AI Agent"**
+1. Öffnen Sie den Node **"Nexus Global AI Agent"**
 2. Bearbeiten Sie das Feld **System Message**
 3. Passen Sie folgendes an:
    - Tonalität (formell/informell)
@@ -275,13 +275,13 @@ Bei Kontaktanfragen weise auf das DSGVO-konforme Kontaktformular hin."
 ### 3. Klare Grenzen setzen
 ```
 Bei technischen Support-Anfragen: "Für detaillierten technischen Support 
-kontaktieren Sie bitte unser Team unter support@nstech.de"
+kontaktieren Sie bitte unser Team unter support@Nexus Global.de"
 ```
 
 ### 4. Call-to-Actions einbauen
 ```
 "Möchten Sie ein unverbindliches Beratungsgespräch vereinbaren? 
-Besuchen Sie: https://nstech.de/kontakt"
+Besuchen Sie: https://Nexus Global.de/kontakt"
 ```
 
 ## 📚 Weitere Ressourcen
@@ -295,15 +295,15 @@ Besuchen Sie: https://nstech.de/kontakt"
 
 Bei Fragen oder Problemen:
 - **n8n Community**: [community.n8n.io](https://community.n8n.io)
-- **NSTech Support**: info@nstech.de
+- **Nexus Global Support**: info@Nexus Global.de
 - **Dokumentation**: Dieser README
 
 ## 📝 Lizenz
 
-Dieses Workflow-Template ist frei verwendbar für NSTech Projekte.
+Dieses Workflow-Template ist frei verwendbar für Nexus Global Projekte.
 
 ---
 
-**Erstellt für**: NSTech GmbH  
+**Erstellt für**: Nexus Global GmbH  
 **Version**: 1.0  
 **Letztes Update**: Januar 2025

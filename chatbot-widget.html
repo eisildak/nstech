@@ -1,12 +1,12 @@
-<!-- NSTech AI Chat Widget - index.html, kontakt.html vb. sayfalarınızın </body> etiketinden ÖNCE ekleyin -->
+<!-- Nexus Global AI Chat Widget - index.html, kontakt.html vb. sayfalarınızın </body> etiketinden ÖNCE ekleyin -->
 
 <style>
-    #nstech-chat-widget {
+    #Nexus Global-chat-widget {
         position: fixed;
         z-index: 99999;
     }
 
-    #nstech-chat-button {
+    #Nexus Global-chat-button {
         position: fixed;
         bottom: 20px;
         right: 20px;
@@ -26,16 +26,16 @@
         z-index: 99999;
     }
 
-    #nstech-chat-button:hover {
+    #Nexus Global-chat-button:hover {
         transform: scale(1.1);
         box-shadow: 0 6px 25px rgba(0, 86, 179, 0.6);
     }
 
-    #nstech-chat-button.active {
+    #Nexus Global-chat-button.active {
         background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
     }
 
-    #nstech-chat-iframe-container {
+    #Nexus Global-chat-iframe-container {
         position: fixed;
         bottom: 90px;
         right: 20px;
@@ -60,11 +60,11 @@
         }
     }
 
-    #nstech-chat-iframe-container.active {
+    #Nexus Global-chat-iframe-container.active {
         display: block;
     }
 
-    #nstech-chat-iframe {
+    #Nexus Global-chat-iframe {
         width: 100%;
         height: 100%;
         border: none;
@@ -73,7 +73,7 @@
 
     /* Mobile Responsive */
     @media (max-width: 500px) {
-        #nstech-chat-iframe-container {
+        #Nexus Global-chat-iframe-container {
             bottom: 0;
             right: 0;
             left: 0;
@@ -83,7 +83,7 @@
             border-radius: 0;
         }
 
-        #nstech-chat-button {
+        #Nexus Global-chat-button {
             bottom: 15px;
             right: 15px;
             width: 55px;
@@ -93,7 +93,7 @@
     }
 
     /* Notification Badge */
-    .nstech-notification-badge {
+    .Nexus Global-notification-badge {
         position: absolute;
         top: -5px;
         right: -5px;
@@ -121,16 +121,16 @@
     }
 </style>
 
-<div id="nstech-chat-widget">
+<div id="Nexus Global-chat-widget">
     <!-- Chat Button -->
-    <button id="nstech-chat-button" onclick="toggleNSTechChat()" aria-label="Chat öffnen">
+    <button id="Nexus Global-chat-button" onclick="toggleNexus GlobalChat()" aria-label="Chat öffnen">
         💬
     </button>
 
     <!-- Chat Container -->
-    <div id="nstech-chat-iframe-container">
+    <div id="Nexus Global-chat-iframe-container">
         <iframe 
-            id="nstech-chat-iframe"
+            id="Nexus Global-chat-iframe"
             src="chatbot.html"
             allow="microphone"
         ></iframe>
@@ -139,9 +139,9 @@
 
 <script>
     // Toggle Chat Window
-    function toggleNSTechChat() {
-        const button = document.getElementById('nstech-chat-button');
-        const container = document.getElementById('nstech-chat-iframe-container');
+    function toggleNexus GlobalChat() {
+        const button = document.getElementById('Nexus Global-chat-button');
+        const container = document.getElementById('Nexus Global-chat-iframe-container');
         
         if (container.classList.contains('active')) {
             // Close chat
@@ -155,7 +155,7 @@
             button.innerHTML = '✕';
             
             // Remove notification badge if exists
-            const badge = button.querySelector('.nstech-notification-badge');
+            const badge = button.querySelector('.Nexus Global-notification-badge');
             if (badge) {
                 badge.remove();
             }
@@ -165,8 +165,8 @@
     // Close chat with Escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
-            const container = document.getElementById('nstech-chat-iframe-container');
-            const button = document.getElementById('nstech-chat-button');
+            const container = document.getElementById('Nexus Global-chat-iframe-container');
+            const button = document.getElementById('Nexus Global-chat-button');
             
             if (container.classList.contains('active')) {
                 container.classList.remove('active');
@@ -178,25 +178,25 @@
 
     // Optional: Show notification badge after 5 seconds
     setTimeout(() => {
-        const button = document.getElementById('nstech-chat-button');
-        const container = document.getElementById('nstech-chat-iframe-container');
+        const button = document.getElementById('Nexus Global-chat-button');
+        const container = document.getElementById('Nexus Global-chat-iframe-container');
         
         // Only show if chat hasn't been opened
-        if (!container.classList.contains('active') && !button.querySelector('.nstech-notification-badge')) {
+        if (!container.classList.contains('active') && !button.querySelector('.Nexus Global-notification-badge')) {
             const badge = document.createElement('span');
-            badge.className = 'nstech-notification-badge';
+            badge.className = 'Nexus Global-notification-badge';
             badge.textContent = '1';
             button.appendChild(badge);
         }
     }, 5000);
 
     // Optional: Auto-open chat after 10 seconds (first visit only)
-    if (!localStorage.getItem('nstech_chat_shown')) {
+    if (!localStorage.getItem('Nexus Global_chat_shown')) {
         setTimeout(() => {
-            const container = document.getElementById('nstech-chat-iframe-container');
+            const container = document.getElementById('Nexus Global-chat-iframe-container');
             if (!container.classList.contains('active')) {
-                toggleNSTechChat();
-                localStorage.setItem('nstech_chat_shown', 'true');
+                toggleNexus GlobalChat();
+                localStorage.setItem('Nexus Global_chat_shown', 'true');
             }
         }, 10000);
     }

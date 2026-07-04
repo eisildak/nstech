@@ -1,4 +1,4 @@
-# NSTech Website - Änderungsprotokoll
+# Nexus Global Website - Änderungsprotokoll
 
 **Datum**: 17. Januar 2025  
 **Session**: Vollständige Website-Optimierung
@@ -68,7 +68,7 @@ blog/
 
 **Was wurde gemacht**:
 - Kompletter n8n Workflow für AI-Chatbot
-- Deutsche System-Message mit NSTech-spezifischem Wissen
+- Deutsche System-Message mit Nexus Global-spezifischem Wissen
 - Detaillierte Setup-Anleitung
 
 **Features**:
@@ -93,7 +93,7 @@ blog/
 - Tools: Selenium, Cypress, JMeter, etc.
 
 **Dateien erstellt**:
-- `/n8n-workflows/nstech-chatbot.json` (198 Zeilen)
+- `/n8n-workflows/Nexus Global-chatbot.json` (198 Zeilen)
 - `/n8n-workflows/README.md` (435 Zeilen)
 
 **Integration-Code bereitgestellt**:
@@ -213,7 +213,7 @@ Schnellzugriff für Entwickler:
 |-------|--------|-----|
 | blog/index.html | 395 | HTML |
 | blog/software-testing-deutschland-2025.html | 365 | HTML |
-| n8n-workflows/nstech-chatbot.json | 198 | JSON |
+| n8n-workflows/Nexus Global-chatbot.json | 198 | JSON |
 | n8n-workflows/README.md | 435 | Markdown |
 | docs/QUALITY_RULES.md | 450 | Markdown |
 | docs/QUICK_REFERENCE.md | 320 | Markdown |
@@ -310,7 +310,7 @@ Vor dem Deployment:
 
 ## 🔗 Wichtige Links
 
-- **Live Website**: https://nstech.de
+- **Live Website**: https://Nexus Global.de
 - **Quality Rules**: [docs/QUALITY_RULES.md](docs/QUALITY_RULES.md)
 - **Quick Reference**: [docs/QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md)
 - **Chatbot Setup**: [n8n-workflows/README.md](n8n-workflows/README.md)
@@ -320,10 +320,10 @@ Vor dem Deployment:
 
 ## 👥 Team
 
-- **Development**: NSTech Dev Team
+- **Development**: Nexus Global Dev Team
 - **Content**: Erol Işıldak
-- **QA**: NSTech QA Team
-- **Documentation**: NSTech Dev Team
+- **QA**: Nexus Global QA Team
+- **Documentation**: Nexus Global Dev Team
 
 ---
 

@@ -1,9 +1,9 @@
-# NSTech GmbH - Software QA & ISO Certification
+# Nexus Global GmbH - Software QA & ISO Certification
 
 **Professional Software Testing and ISO Certification Services in Germany**
 
-🌐 **Website**: [nstech.de](https://nstech.de)  
-📧 **Contact**: info@nstech.de  
+🌐 **Website**: [Nexus Global.de](https://Nexus Global.de)  
+📧 **Contact**: info@Nexus Global.de  
 🏢 **Services**: QA Consulting, Test Automation, ISO 9001/27001 Certification
 
 ---
@@ -25,7 +25,7 @@ npm start
 ## 📁 Project Structure
 
 ```
-nstech/
+Nexus Global/
 ├── 🏠 Homepage
 │   ├── index.html              # DE Homepage
 │   └── index-en.html           # EN Homepage
@@ -50,7 +50,7 @@ nstech/
 │
 ├── 🤖 Chatbot
 │   └── n8n-workflows/
-│       ├── nstech-chatbot.json # n8n AI chatbot workflow
+│       ├── Nexus Global-chatbot.json # n8n AI chatbot workflow
 │       └── README.md           # Setup instructions
 │
 ├── 📚 Documentation
@@ -60,7 +60,7 @@ nstech/
 │
 ├── 🎨 Assets
 │   └── assets/
-│       └── black.png           # NSTech logo
+│       └── black.png           # Nexus Global logo
 │
 └── 🔧 Backend
     ├── server.js               # Express server (Email API)
@@ -221,7 +221,7 @@ Content-Type: application/json
 
 ## 🤖 AI Chatbot Setup
 
-1. Import `n8n-workflows/nstech-chatbot.json` into n8n
+1. Import `n8n-workflows/Nexus Global-chatbot.json` into n8n
 2. Get API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
 3. Configure in "Gemini AI Model" node
 4. Activate workflow
@@ -270,10 +270,10 @@ PORT=3000
 
 ## 📝 License & Contact
 
-**© 2025 NSTech GmbH - All Rights Reserved**
+**© 2025 Nexus Global GmbH - All Rights Reserved**
 
-- **Website**: https://nstech.de
-- **Email**: info@nstech.de
+- **Website**: https://Nexus Global.de
+- **Email**: info@Nexus Global.de
 - **Managing Director**: Erol Işıldak
 - **Location**: Germany
 

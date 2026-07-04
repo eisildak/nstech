@@ -21,7 +21,7 @@ export default async function handler(req, res) {
 
     // Send email using Resend
     const data = await resend.emails.send({
-      from: 'NSTech Kontakt <onboarding@resend.dev>', // Update with your verified domain
+      from: 'Nexus Global Kontakt <onboarding@resend.dev>', // Update with your verified domain
       to: ['erol.isildak@pointr.tech'], // Your email
       replyTo: email,
       subject: `Neue Kontaktanfrage von ${vorname} ${nachname}`,
@@ -82,7 +82,7 @@ export default async function handler(req, res) {
               
               <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
               <p style="font-size: 12px; color: #666;">
-                Diese E-Mail wurde über das Kontaktformular auf nstech.de gesendet.
+                Diese E-Mail wurde über das Kontaktformular auf Nexus Global.de gesendet.
               </p>
             </div>
           </div>
@@ -93,9 +93,9 @@ export default async function handler(req, res) {
 
     // Send auto-reply to customer
     await resend.emails.send({
-      from: 'NSTech <onboarding@resend.dev>', // Update with your verified domain
+      from: 'Nexus Global <onboarding@resend.dev>', // Update with your verified domain
       to: [email],
-      subject: 'Vielen Dank für Ihre Nachricht - NSTech',
+      subject: 'Vielen Dank für Ihre Nachricht - Nexus Global',
       html: `
         <!DOCTYPE html>
         <html>
@@ -118,7 +118,7 @@ export default async function handler(req, res) {
               <p>Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.</p>
               <p>Bei dringenden Anfragen können Sie uns auch direkt telefonisch erreichen.</p>
               <hr style="margin: 20px 0;">
-              <p><strong>NSTech QA & ISO-Zertifizierung</strong><br>
+              <p><strong>Nexus Global QA & ISO-Zertifizierung</strong><br>
               📧 erol.isildak@pointr.tech<br>
               📱 +49 XXX XXXXXXX</p>
             </div>

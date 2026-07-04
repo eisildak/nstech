@@ -1,4 +1,4 @@
-# NSTech Website - Quick Reference Guide
+# Nexus Global Website - Quick Reference Guide
 
 🚀 **Schnellstart für Entwickler**
 
@@ -33,7 +33,7 @@ git push
 ## 📁 Projektstruktur
 
 ```
-nstech/
+Nexus Global/
 ├── index.html              # Homepage DE
 ├── index-en.html           # Homepage EN
 ├── leistungen.html         # Services DE
@@ -52,7 +52,7 @@ nstech/
 │   ├── index.html          # Blog Übersicht
 │   └── *.html              # Blog Artikel
 ├── n8n-workflows/
-│   ├── nstech-chatbot.json # n8n Workflow
+│   ├── Nexus Global-chatbot.json # n8n Workflow
 │   └── README.md           # Setup-Anleitung
 ├── docs/
 │   ├── QUALITY_RULES.md    # ⭐ Qualitätsregeln (LESEN!)
@@ -69,7 +69,7 @@ nstech/
 ### Farben (Tailwind Config)
 
 ```javascript
-nstech: {
+Nexus Global: {
   blue: '#0056b3',    // Primärfarbe
   dark: '#1a1a1a',    // Texte, Überschriften
   light: '#f4f7f6',   // Hintergründe
@@ -80,17 +80,17 @@ nstech: {
 
 ### Verwendung:
 ```html
-<button class="bg-nstech-blue text-white">Primary Button</button>
-<h1 class="text-nstech-dark">Überschrift</h1>
-<section class="bg-nstech-light">Heller Hintergrund</section>
+<button class="bg-Nexus Global-blue text-white">Primary Button</button>
+<h1 class="text-Nexus Global-dark">Überschrift</h1>
+<section class="bg-Nexus Global-light">Heller Hintergrund</section>
 ```
 
 ### Typografie
 
 ```html
 <!-- Überschriften -->
-<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-nstech-dark">
-<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-nstech-dark">
+<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-Nexus Global-dark">
+<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-Nexus Global-dark">
 <h3 class="text-xl md:text-2xl font-bold text-gray-900">
 
 <!-- Body Text -->
@@ -117,16 +117,16 @@ nstech: {
 
 ```html
 <!-- Button Primary -->
-<a class="px-8 py-4 bg-nstech-blue text-white rounded-full font-bold hover:bg-blue-700 transition">
+<a class="px-8 py-4 bg-Nexus Global-blue text-white rounded-full font-bold hover:bg-blue-700 transition">
 
 <!-- Button Secondary -->
-<a class="px-8 py-4 border-2 border-nstech-blue text-nstech-blue rounded-full font-bold hover:bg-nstech-blue hover:text-white transition">
+<a class="px-8 py-4 border-2 border-Nexus Global-blue text-Nexus Global-blue rounded-full font-bold hover:bg-Nexus Global-blue hover:text-white transition">
 
 <!-- Card -->
 <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
 
 <!-- Input -->
-<input class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-nstech-blue focus:border-transparent">
+<input class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-Nexus Global-blue focus:border-transparent">
 ```
 
 ---
@@ -148,14 +148,14 @@ nstech: {
 ```html
 <!-- In deutscher Seite -->
 <div class="flex items-center space-x-2">
-  <a href="leistungen.html" class="px-3 py-1.5 bg-nstech-blue text-white rounded-md">DE</a>
+  <a href="leistungen.html" class="px-3 py-1.5 bg-Nexus Global-blue text-white rounded-md">DE</a>
   <a href="services-en.html" class="px-3 py-1.5 text-gray-600 hover:bg-gray-100 rounded-md">EN</a>
 </div>
 
 <!-- In englischer Seite -->
 <div class="flex items-center space-x-2">
   <a href="leistungen.html" class="px-3 py-1.5 text-gray-600 hover:bg-gray-100 rounded-md">DE</a>
-  <a href="services-en.html" class="px-3 py-1.5 bg-nstech-blue text-white rounded-md">EN</a>
+  <a href="services-en.html" class="px-3 py-1.5 bg-Nexus Global-blue text-white rounded-md">EN</a>
 </div>
 ```
 
@@ -246,7 +246,7 @@ Ctrl+Shift+R     : Hard Reload (Cache leeren)
 F12 → Lighthouse Tab → "Generate Report"
 
 # CLI
-npx lighthouse https://nstech.de --view
+npx lighthouse https://Nexus Global.de --view
 ```
 
 ### Git Workflow
@@ -308,7 +308,7 @@ curl -X POST http://localhost:3000/api/send-email \
 
 ### Setup-Schritte (Ultra-Kurz)
 
-1. Importiere `n8n-workflows/nstech-chatbot.json` in n8n
+1. Importiere `n8n-workflows/Nexus Global-chatbot.json` in n8n
 2. Hole Gemini API Key von [Google AI Studio](https://aistudio.google.com/app/apikey)
 3. Configure im "Gemini AI Model" Node
 4. Aktiviere Workflow
@@ -326,7 +326,7 @@ curl -X POST http://localhost:3000/api/send-email \
     chatBtn.style.cssText = 'position:fixed;bottom:20px;right:20px;width:60px;height:60px;border-radius:50%;background:#0056b3;color:white;border:none;font-size:24px;cursor:pointer;z-index:9999;box-shadow:0 4px 12px rgba(0,86,179,0.4)';
     
     chatBtn.onclick = () => {
-      window.open('https://YOUR-N8N-URL/webhook/nstech-website-chat', '_blank', 'width=400,height=600');
+      window.open('https://YOUR-N8N-URL/webhook/Nexus Global-website-chat', '_blank', 'width=400,height=600');
     };
     
     document.body.appendChild(chatBtn);
@@ -438,15 +438,15 @@ function toggleMobileMenu() {
 - **Resend API**: https://resend.com/docs
 
 ### Kontakt
-- **Dev Team**: dev@nstech.de
-- **Content**: erol@nstech.de
-- **Support**: info@nstech.de
+- **Dev Team**: dev@Nexus Global.de
+- **Content**: erol@Nexus Global.de
+- **Support**: info@Nexus Global.de
 
 ---
 
 **Version**: 1.0  
 **Letztes Update**: 17. Januar 2025  
-**Maintainer**: NSTech Dev Team
+**Maintainer**: Nexus Global Dev Team
 
 ---
 

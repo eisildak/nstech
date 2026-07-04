@@ -1,4 +1,4 @@
-# NSTech AI Chatbot - Ücretsiz Kurulum Kılavuzu
+# Nexus Global AI Chatbot - Ücretsiz Kurulum Kılavuzu
 
 🎉 **Tamamen ücretsiz! Sadece Gemini API kullanıyor.**
 
@@ -29,10 +29,10 @@ Tüm sayfalarınıza ekleyin (index.html, kontakt.html, karriere.html vb.):
 **`</body>` etiketinden ÖNCE ekleyin:**
 
 ```html
-<!-- NSTech AI Chat Widget -->
+<!-- Nexus Global AI Chat Widget -->
 <style>
-    #nstech-chat-widget { position: fixed; z-index: 99999; }
-    #nstech-chat-button {
+    #Nexus Global-chat-widget { position: fixed; z-index: 99999; }
+    #Nexus Global-chat-button {
         position: fixed; bottom: 20px; right: 20px;
         width: 60px; height: 60px; border-radius: 50%;
         background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
@@ -41,34 +41,34 @@ Tüm sayfalarınıza ekleyin (index.html, kontakt.html, karriere.html vb.):
         transition: all 0.3s ease;
         display: flex; align-items: center; justify-content: center;
     }
-    #nstech-chat-button:hover { transform: scale(1.1); }
-    #nstech-chat-button.active { background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); }
-    #nstech-chat-iframe-container {
+    #Nexus Global-chat-button:hover { transform: scale(1.1); }
+    #Nexus Global-chat-button.active { background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); }
+    #Nexus Global-chat-iframe-container {
         position: fixed; bottom: 90px; right: 20px;
         width: 400px; height: 600px; border-radius: 20px;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
         overflow: hidden; display: none; z-index: 99998;
     }
-    #nstech-chat-iframe-container.active { display: block; }
+    #Nexus Global-chat-iframe-container.active { display: block; }
     @media (max-width: 500px) {
-        #nstech-chat-iframe-container {
+        #Nexus Global-chat-iframe-container {
             bottom: 0; right: 0; left: 0; top: 0;
             width: 100%; height: 100%; border-radius: 0;
         }
     }
 </style>
 
-<div id="nstech-chat-widget">
-    <button id="nstech-chat-button" onclick="toggleNSTechChat()">💬</button>
-    <div id="nstech-chat-iframe-container">
+<div id="Nexus Global-chat-widget">
+    <button id="Nexus Global-chat-button" onclick="toggleNexus GlobalChat()">💬</button>
+    <div id="Nexus Global-chat-iframe-container">
         <iframe src="chatbot.html" style="width:100%;height:100%;border:none;border-radius:20px;"></iframe>
     </div>
 </div>
 
 <script>
-function toggleNSTechChat() {
-    const btn = document.getElementById('nstech-chat-button');
-    const container = document.getElementById('nstech-chat-iframe-container');
+function toggleNexus GlobalChat() {
+    const btn = document.getElementById('Nexus Global-chat-button');
+    const container = document.getElementById('Nexus Global-chat-iframe-container');
     if (container.classList.contains('active')) {
         container.classList.remove('active');
         btn.classList.remove('active');
@@ -81,8 +81,8 @@ function toggleNSTechChat() {
 }
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-        const container = document.getElementById('nstech-chat-iframe-container');
-        const btn = document.getElementById('nstech-chat-button');
+        const container = document.getElementById('Nexus Global-chat-iframe-container');
+        const btn = document.getElementById('Nexus Global-chat-button');
         if (container.classList.contains('active')) {
             container.classList.remove('active');
             btn.classList.remove('active');
@@ -119,7 +119,7 @@ document.addEventListener('keydown', (e) => {
 ```javascript
 // Satır ~200 civarı
 const SYSTEM_PROMPT = `
-Du bist der offizielle AI-Assistent von NSTech GmbH...
+Du bist der offizielle AI-Assistent von Nexus Global GmbH...
 
 // Buraya kendi bilgilerinizi ekleyin:
 - Ek servisler
@@ -140,7 +140,7 @@ background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
 
 ```css
 /* Sağ alt yerine sol alt: */
-#nstech-chat-button {
+#Nexus Global-chat-button {
     left: 20px;  /* right: 20px; yerine */
     bottom: 20px;
 }
@@ -151,7 +151,7 @@ background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
 ```javascript
 // 10 saniye sonra otomatik aç
 setTimeout(() => {
-    toggleNSTechChat();
+    toggleNexus GlobalChat();
 }, 10000);
 ```
 
@@ -308,9 +308,9 @@ function addMessage(text, sender) {
 
 ```javascript
 // Konuşma sayısını say
-let chatCount = parseInt(localStorage.getItem('nstech_chat_count') || '0');
+let chatCount = parseInt(localStorage.getItem('Nexus Global_chat_count') || '0');
 chatCount++;
-localStorage.setItem('nstech_chat_count', chatCount);
+localStorage.setItem('Nexus Global_chat_count', chatCount);
 
 console.log(`Total chats: ${chatCount}`);
 ```
@@ -416,7 +416,7 @@ if (localStorage.getItem('cookies_accepted')) {
 3. Network tab'de request'leri incele
 
 **Yardım**:
-- Email: dev@nstech.de
+- Email: dev@Nexus Global.de
 - Dokümantasyon: Bu dosya
 
 ---

@@ -1,7 +1,7 @@
 {
-  "name": "nstech-website",
+  "name": "Nexus Global-website",
   "version": "1.0.0",
-  "description": "NSTech QA & ISO-Zertifizierung Website",
+  "description": "Nexus Global QA & ISO-Zertifizierung Website",
   "type": "module",
   "scripts": {
     "dev": "node server.js",
