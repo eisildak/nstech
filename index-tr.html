@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -105,12 +105,9 @@
                             <i class="fa-solid fa-globe mr-1"></i> <span id="current-lang">TR</span>
                         </button>
                         <div id="lang-dropdown" class="absolute right-0 mt-2 w-28 bg-white border border-gray-200 rounded-md shadow-lg hidden">
-                            <button onclick="window.location.href='index-tr.html'" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Türkçe</button>
-                            <button onclick="window.location.href='index-en.html'" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</button>
-                            <button onclick="window.location.href='index.html'" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</button>
-                            <button onclick="window.location.href='index-ar.html'" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</button>
-                            <button onclick="window.location.href='index-ka.html'" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">ქართული</button>
-                            <button onclick="window.location.href='index-ha.html'" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Hausa</button>
+                            <button onclick="setLanguage('tr')" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Türkçe</button>
+                            <button onclick="setLanguage('en')" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</button>
+                            <button onclick="setLanguage('de')" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</button>
                         </div>
                     </div>
                 </div>
@@ -138,12 +135,9 @@
                 <a href="#contact" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-Nexus-blue hover:bg-gray-50">İletişim</a>
                 <a href="blog/index.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-Nexus-blue hover:bg-gray-50">Blog</a>
                 <div class="flex justify-center space-x-4 px-4 py-3 border-t border-gray-200 mt-2">
-                    <a href="index-tr.html" class="text-sm font-bold text-Nexus-blue">TR</a>
-                    <a href="index-en.html" class="text-sm font-bold text-gray-600 hover:text-Nexus-blue">EN</a>
-                    <a href="index.html" class="text-sm font-bold text-gray-600 hover:text-Nexus-blue">DE</a>
-                    <a href="index-ar.html" class="text-sm font-bold text-gray-600 hover:text-Nexus-blue">عربي</a>
-                    <a href="index-ka.html" class="text-sm font-bold text-gray-600 hover:text-Nexus-blue">KA</a>
-                    <a href="index-ha.html" class="text-sm font-bold text-gray-600 hover:text-Nexus-blue">HA</a>
+                    <a href="#" onclick="setLanguage('tr');return false;" class="text-sm font-bold text-Nexus-blue">TR</a>
+                    <a href="#" onclick="setLanguage('en');return false;" class="text-sm font-bold text-gray-600 hover:text-Nexus-blue">EN</a>
+                    <a href="#" onclick="setLanguage('de');return false;" class="text-sm font-bold text-gray-600 hover:text-Nexus-blue">DE</a>
                 </div>
             </div>
         </div>
