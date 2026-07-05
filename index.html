@@ -17,7 +17,7 @@
             theme: {
                 extend: {
                     colors: {
-                        Nexus Global: {
+                        Nexus: {
                             blue: '#0056b3',
                             dark: '#1a1a1a',
                             light: '#f4f7f6',
@@ -102,7 +102,7 @@
                     <a href="index.html" class="flex items-center gap-3">
                         <img src="assets/logo.svg" alt="Nexus Global Certificate Logo" class="h-10 sm:h-12 md:h-12 rounded-xl flex-shrink-0">
                         <div class="flex flex-col">
-                            <span class="text-Nexus Global-blue font-bold text-sm sm:text-base md:text-lg leading-tight whitespace-nowrap">Nexus Global Certificate</span>
+                            <span class="text-Nexus-blue font-bold text-sm sm:text-base md:text-lg leading-tight whitespace-nowrap">Nexus Global Certificate</span>
                             <span class="text-yellow-500 text-[10px] sm:text-xs leading-tight whitespace-nowrap">Qualität. Vertrauen. Zukunft.</span>
                         </div>
                     </a>
@@ -110,20 +110,20 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex space-x-8 items-center">
-                    <a href="index.html" class="text-Nexus Global-blue font-semibold border-b-2 border-Nexus Global-blue pb-1">Startseite</a>
-                    <a href="leistungen.html" class="text-gray-600 hover:text-Nexus Global-blue font-medium transition border-b-2 border-transparent pb-1">QA Testing</a>
-                    <a href="iso-zertifizierung.html" class="text-gray-600 hover:text-Nexus Global-blue font-medium transition border-b-2 border-transparent pb-1">ISO-Zertifizierung</a>
-                    <a href="uber-uns.html" class="text-gray-600 hover:text-Nexus Global-blue font-medium transition border-b-2 border-transparent pb-1">Über Uns</a>
-                    <a href="karriere.html" class="text-gray-600 hover:text-Nexus Global-blue font-medium transition border-b-2 border-transparent pb-1">Karriere</a>
-                    <a href="kontakt.html" class="text-gray-600 hover:text-Nexus Global-blue font-medium transition border-b-2 border-transparent pb-1">Kontakt</a>
-                    <a href="blog/index.html" class="text-gray-600 hover:text-Nexus Global-blue font-medium transition border-b-2 border-transparent pb-1">Blog</a>
+                    <a href="index.html" class="text-Nexus-blue font-semibold border-b-2 border-Nexus-blue pb-1">Startseite</a>
+                    <a href="leistungen.html" class="text-gray-600 hover:text-Nexus-blue font-medium transition border-b-2 border-transparent pb-1">QA Testing</a>
+                    <a href="iso-zertifizierung.html" class="text-gray-600 hover:text-Nexus-blue font-medium transition border-b-2 border-transparent pb-1">ISO-Zertifizierung</a>
+                    <a href="uber-uns.html" class="text-gray-600 hover:text-Nexus-blue font-medium transition border-b-2 border-transparent pb-1">Über Uns</a>
+                    <a href="karriere.html" class="text-gray-600 hover:text-Nexus-blue font-medium transition border-b-2 border-transparent pb-1">Karriere</a>
+                    <a href="kontakt.html" class="text-gray-600 hover:text-Nexus-blue font-medium transition border-b-2 border-transparent pb-1">Kontakt</a>
+                    <a href="blog/index.html" class="text-gray-600 hover:text-Nexus-blue font-medium transition border-b-2 border-transparent pb-1">Blog</a>
                     <!-- Language Selector -->
                     <div class="relative ml-4">
-                        <button onclick="toggleLangMenu()" class="flex items-center text-gray-600 hover:text-Nexus Global-blue focus:outline-none">
+                        <button onclick="toggleLangMenu()" class="flex items-center text-gray-600 hover:text-Nexus-blue focus:outline-none">
                             <i class="fa-solid fa-globe mr-1"></i> <span>DE</span> <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
                         </button>
                         <div id="lang-dropdown" class="absolute right-0 mt-2 w-36 bg-white border border-gray-200 rounded-md shadow-lg hidden z-50">
-                            <a href="index.html" class="block px-4 py-2 text-sm text-white bg-Nexus Global-blue">Deutsch</a>
+                            <a href="index.html" class="block px-4 py-2 text-sm text-white bg-Nexus-blue">Deutsch</a>
                             <a href="index-en.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
                             <a href="index-tr.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Türkçe</a>
                             <a href="index-ar.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
@@ -135,7 +135,7 @@
 
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden flex items-center">
-                    <button onclick="toggleMobileMenu()" class="text-gray-600 hover:text-Nexus Global-blue focus:outline-none">
+                    <button onclick="toggleMobileMenu()" class="text-gray-600 hover:text-Nexus-blue focus:outline-none">
                         <i class="fa-solid fa-bars text-xl"></i>
                     </button>
                 </div>
@@ -145,15 +145,15 @@
         <!-- Mobile Menu Panel -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-lg">
             <div class="px-4 pt-2 pb-4 space-y-1">
-                <a href="index.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-Nexus Global-blue bg-blue-50">Startseite</a>
-                <a href="leistungen.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-Nexus Global-blue hover:bg-gray-50">QA Testing</a>
-                <a href="iso-zertifizierung.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-Nexus Global-blue hover:bg-gray-50">ISO-Zertifizierung</a>
-                <a href="uber-uns.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-Nexus Global-blue hover:bg-gray-50">Über Uns</a>
-                <a href="karriere.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-Nexus Global-blue hover:bg-gray-50">Karriere</a>
-                <a href="kontakt.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-Nexus Global-blue hover:bg-gray-50">Kontakt</a>
+                <a href="index.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-Nexus-blue bg-blue-50">Startseite</a>
+                <a href="leistungen.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-Nexus-blue hover:bg-gray-50">QA Testing</a>
+                <a href="iso-zertifizierung.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-Nexus-blue hover:bg-gray-50">ISO-Zertifizierung</a>
+                <a href="uber-uns.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-Nexus-blue hover:bg-gray-50">Über Uns</a>
+                <a href="karriere.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-Nexus-blue hover:bg-gray-50">Karriere</a>
+                <a href="kontakt.html" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-Nexus-blue hover:bg-gray-50">Kontakt</a>
                 <div class="border-t border-gray-200 mt-2 pt-2">
                     <div class="flex space-x-2 px-4 py-2">
-                        <a href="index.html" class="flex-1 text-center px-3 py-2 bg-Nexus Global-blue text-white rounded-md font-semibold text-sm">Deutsch</a>
+                        <a href="index.html" class="flex-1 text-center px-3 py-2 bg-Nexus-blue text-white rounded-md font-semibold text-sm">Deutsch</a>
                         <a href="index-en.html" class="flex-1 text-center px-3 py-2 bg-gray-100 text-gray-600 rounded-md font-semibold text-sm">English</a>
                     </div>
                 </div>
@@ -173,16 +173,16 @@
                         <i class="fa-solid fa-shield-halved mr-2"></i>DSGVO-konform • ISO-zertifiziert
                     </div>
                     <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
-                        Bewährte Expertise in <span class="text-Nexus Global-accent">End-to-End</span> Software-Qualitätssicherung
+                        Bewährte Expertise in <span class="text-Nexus-accent">End-to-End</span> Software-Qualitätssicherung
                     </h1>
                     <p class="text-base sm:text-lg lg:text-xl text-blue-100 mb-8 leading-relaxed">
                         Nexus Global Certificate ist Ihr strategischer Partner für erstklassige Softwaretests und ISO-Zertifizierung in Deutschland. Wir kombinieren German Quality Standards mit innovativen QA-Lösungen.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="kontakt.html" class="px-8 py-4 bg-white text-Nexus Global-blue rounded-full font-bold hover:bg-gray-100 transition shadow-lg text-center">
+                        <a href="kontakt.html" class="px-8 py-4 bg-white text-Nexus-blue rounded-full font-bold hover:bg-gray-100 transition shadow-lg text-center">
                             Beratungsgespräch vereinbaren
                         </a>
-                        <a href="leistungen.html" class="px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-Nexus Global-blue transition text-center">
+                        <a href="leistungen.html" class="px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-Nexus-blue transition text-center">
                             Unsere Leistungen
                         </a>
                     </div>
@@ -206,14 +206,14 @@
             <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
                 <div class="stat-card">
                     <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fa-solid fa-award text-3xl text-Nexus Global-blue"></i>
+                        <i class="fa-solid fa-award text-3xl text-Nexus-blue"></i>
                     </div>
                     <p class="font-bold text-3xl text-gray-800 mb-2">13+</p>
                     <p class="text-sm text-gray-600">Jahre Erfahrung</p>
                 </div>
                 <div class="stat-card">
                     <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                        <i class="fa-solid fa-shield-halved text-3xl text-Nexus Global-green"></i>
+                        <i class="fa-solid fa-shield-halved text-3xl text-Nexus-green"></i>
                     </div>
                     <p class="font-bold text-3xl text-gray-800 mb-2">100%</p>
                     <p class="text-sm text-gray-600">DSGVO-konform</p>
@@ -243,10 +243,10 @@
     <!-- ========================================
          UNIQUE VALUE PROPOSITION
     ======================================== -->
-    <section class="py-24 bg-gradient-to-br from-Nexus Global-light to-white">
+    <section class="py-24 bg-gradient-to-br from-Nexus-light to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-Nexus Global-dark mb-4 px-4">Maßgeschneiderte QA-Partnerschaften für außergewöhnliche Softwareergebnisse</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-Nexus-dark mb-4 px-4">Maßgeschneiderte QA-Partnerschaften für außergewöhnliche Softwareergebnisse</h2>
                 <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
                     Als in Deutschland ansässiger Partner kombinieren wir Software-Testing mit ISO-Compliance – eine einzigartige Positionierung im deutschen Markt.
                 </p>
@@ -262,7 +262,7 @@
                     <p class="text-gray-600 mb-6">
                         Innovative QA-Beratung für zukunftssichere Software, die deutsche Qualitätsstandards und internationale Best Practices vereint.
                     </p>
-                    <a href="leistungen.html#beratung" class="text-Nexus Global-blue font-semibold hover:underline inline-flex items-center">
+                    <a href="leistungen.html#beratung" class="text-Nexus-blue font-semibold hover:underline inline-flex items-center">
                         Mehr erfahren <i class="fa-solid fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -276,7 +276,7 @@
                     <p class="text-gray-600 mb-6">
                         Vollständig verwaltete Test-Services von Experten, die sowohl manuelle als auch automatisierte Tests in Ihren Entwicklungszyklus integrieren.
                     </p>
-                    <a href="leistungen.html#services" class="text-Nexus Global-blue font-semibold hover:underline inline-flex items-center">
+                    <a href="leistungen.html#services" class="text-Nexus-blue font-semibold hover:underline inline-flex items-center">
                         Mehr erfahren <i class="fa-solid fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -290,7 +290,7 @@
                     <p class="text-gray-600 mb-6">
                         Audit-Ready Software: Wir machen Ihre Software fit für ISO 9001, ISO 27001 und andere relevante Zertifizierungen.
                     </p>
-                    <a href="leistungen.html#iso" class="text-Nexus Global-blue font-semibold hover:underline inline-flex items-center">
+                    <a href="leistungen.html#iso" class="text-Nexus-blue font-semibold hover:underline inline-flex items-center">
                         Mehr erfahren <i class="fa-solid fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -304,7 +304,7 @@
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-Nexus Global-dark mb-4">Warum Nexus Global?</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-Nexus-dark mb-4">Warum Nexus Global?</h2>
                 <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
                     Einzigartige Kombination aus Software-Testing und ISO-Compliance für den deutschen Markt
                 </p>
@@ -312,7 +312,7 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100">
-                    <div class="w-14 h-14 bg-Nexus Global-blue rounded-xl flex items-center justify-center text-white text-2xl mb-4">
+                    <div class="w-14 h-14 bg-Nexus-blue rounded-xl flex items-center justify-center text-white text-2xl mb-4">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-900">DSGVO-Compliance</h3>
@@ -322,7 +322,7 @@
                 </div>
 
                 <div class="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl border border-green-100">
-                    <div class="w-14 h-14 bg-Nexus Global-green rounded-xl flex items-center justify-center text-white text-2xl mb-4">
+                    <div class="w-14 h-14 bg-Nexus-green rounded-xl flex items-center justify-center text-white text-2xl mb-4">
                         <i class="fa-solid fa-language"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-900">Muttersprachliche Teams</h3>
@@ -380,7 +380,7 @@
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-Nexus Global-dark mb-4 px-4">Erfolgreiche Projekte</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-Nexus-dark mb-4 px-4">Erfolgreiche Projekte</h2>
                 <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-8 px-4">Vertrauen von führenden Unternehmen in Deutschland</p>
             </div>
             
@@ -391,7 +391,7 @@
                     <div class="flex items-center justify-between mb-6">
                         <div>
                             <h3 class="text-2xl font-bold text-gray-900 mb-2">Fruveg GmbH</h3>
-                            <a href="https://www.fruveg.de/" target="_blank" class="text-sm text-Nexus Global-blue hover:underline">
+                            <a href="https://www.fruveg.de/" target="_blank" class="text-sm text-Nexus-blue hover:underline">
                                 www.fruveg.de <i class="fa-solid fa-external-link-alt ml-1"></i>
                             </a>
                         </div>
@@ -408,7 +408,7 @@
                             <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-lg text-sm font-semibold">
                                 <i class="fa-solid fa-certificate mr-1"></i> ISO 22000
                             </span>
-                            <span class="px-4 py-2 bg-blue-100 text-Nexus Global-blue rounded-lg text-sm font-semibold">
+                            <span class="px-4 py-2 bg-blue-100 text-Nexus-blue rounded-lg text-sm font-semibold">
                                 <i class="fa-solid fa-certificate mr-1"></i> ISO 9001
                             </span>
                         </div>
@@ -420,7 +420,7 @@
                     <div class="flex items-center justify-between mb-6">
                         <div>
                             <h3 class="text-2xl font-bold text-gray-900 mb-2">MainCity GmbH</h3>
-                            <a href="https://maincity-gmbh.de/" target="_blank" class="text-sm text-Nexus Global-blue hover:underline">
+                            <a href="https://maincity-gmbh.de/" target="_blank" class="text-sm text-Nexus-blue hover:underline">
                                 maincity-gmbh.de <i class="fa-solid fa-external-link-alt ml-1"></i>
                             </a>
                         </div>
@@ -434,7 +434,7 @@
                     <div class="border-t border-gray-200 pt-4">
                         <p class="text-sm font-semibold text-gray-700 mb-3">ISO-Zertifizierungen:</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 bg-blue-100 text-Nexus Global-blue rounded-lg text-sm font-semibold">
+                            <span class="px-4 py-2 bg-blue-100 text-Nexus-blue rounded-lg text-sm font-semibold">
                                 <i class="fa-solid fa-certificate mr-1"></i> ISO 9001
                             </span>
                             <span class="px-4 py-2 bg-green-100 text-green-700 rounded-lg text-sm font-semibold">
@@ -449,7 +449,7 @@
                     <div class="flex items-center justify-between mb-6">
                         <div>
                             <h3 class="text-2xl font-bold text-gray-900 mb-2">Emamil</h3>
-                            <a href="https://emamil.de/" target="_blank" class="text-sm text-Nexus Global-blue hover:underline">
+                            <a href="https://emamil.de/" target="_blank" class="text-sm text-Nexus-blue hover:underline">
                                 emamil.de <i class="fa-solid fa-external-link-alt ml-1"></i>
                             </a>
                         </div>
@@ -463,7 +463,7 @@
                     <div class="border-t border-gray-200 pt-4">
                         <p class="text-sm font-semibold text-gray-700 mb-3">ISO-Zertifizierungen:</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 bg-blue-100 text-Nexus Global-blue rounded-lg text-sm font-semibold">
+                            <span class="px-4 py-2 bg-blue-100 text-Nexus-blue rounded-lg text-sm font-semibold">
                                 <i class="fa-solid fa-certificate mr-1"></i> ISO 9001
                             </span>
                             <span class="px-4 py-2 bg-green-100 text-green-700 rounded-lg text-sm font-semibold">
@@ -478,7 +478,7 @@
                     <div class="flex items-center justify-between mb-6">
                         <div>
                             <h3 class="text-2xl font-bold text-gray-900 mb-2">FrachtPilot</h3>
-                            <a href="https://www.frachtpilot.de/" target="_blank" class="text-sm text-Nexus Global-blue hover:underline">
+                            <a href="https://www.frachtpilot.de/" target="_blank" class="text-sm text-Nexus-blue hover:underline">
                                 www.frachtpilot.de <i class="fa-solid fa-external-link-alt ml-1"></i>
                             </a>
                         </div>
@@ -492,7 +492,7 @@
                     <div class="border-t border-gray-200 pt-4">
                         <p class="text-sm font-semibold text-gray-700 mb-3">QA-Services:</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 bg-blue-100 text-Nexus Global-blue rounded-lg text-sm font-semibold">
+                            <span class="px-4 py-2 bg-blue-100 text-Nexus-blue rounded-lg text-sm font-semibold">
                                 <i class="fa-solid fa-vial mr-1"></i> End-to-End Testing
                             </span>
                             <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-lg text-sm font-semibold">
@@ -507,7 +507,7 @@
             </div>
 
             <!-- Success Metrics -->
-            <div class="mt-16 bg-gradient-to-r from-Nexus Global-blue to-blue-700 rounded-2xl p-6 sm:p-8 md:p-10 text-white">
+            <div class="mt-16 bg-gradient-to-r from-Nexus-blue to-blue-700 rounded-2xl p-6 sm:p-8 md:p-10 text-white">
                 <div class="text-center mb-8">
                     <h3 class="text-2xl sm:text-3xl font-bold mb-3">Messbare Erfolge</h3>
                     <p class="text-blue-100">Unsere Partnerschaften basieren auf nachweisbaren Ergebnissen</p>
@@ -540,7 +540,7 @@
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-Nexus Global-dark mb-4 px-4">Branchen-Expertise</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-Nexus-dark mb-4 px-4">Branchen-Expertise</h2>
                 <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
                     Spezialisierte QA- und ISO-Services für Schlüsselindustrien in Deutschland
                 </p>
@@ -548,7 +548,7 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="group p-6 bg-gradient-to-br from-blue-50 to-white rounded-xl border border-blue-100 hover:shadow-lg transition cursor-pointer">
-                    <i class="fa-solid fa-building-columns text-4xl text-Nexus Global-blue mb-4"></i>
+                    <i class="fa-solid fa-building-columns text-4xl text-Nexus-blue mb-4"></i>
                     <h3 class="text-lg font-bold mb-2 text-gray-900">Finanzdienstleistungen</h3>
                     <p class="text-sm text-gray-600">Sichere, konforme Finanzsoftware mit strengen Tests</p>
                 </div>
@@ -566,7 +566,7 @@
                 </div>
 
                 <div class="group p-6 bg-gradient-to-br from-green-50 to-white rounded-xl border border-green-100 hover:shadow-lg transition cursor-pointer">
-                    <i class="fa-solid fa-shopping-cart text-4xl text-Nexus Global-green mb-4"></i>
+                    <i class="fa-solid fa-shopping-cart text-4xl text-Nexus-green mb-4"></i>
                     <h3 class="text-lg font-bold mb-2 text-gray-900">E-Commerce & Retail</h3>
                     <p class="text-sm text-gray-600">Nahtlose Kundenerlebnisse und Skalierbarkeit</p>
                 </div>
@@ -601,13 +601,13 @@
     <!-- ========================================
          CTA SECTION
     ======================================== -->
-    <section class="py-20 bg-gradient-to-r from-Nexus Global-blue to-blue-700 text-white">
+    <section class="py-20 bg-gradient-to-r from-Nexus-blue to-blue-700 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Verstehen Sie, warum führende Marken mit Nexus Global Certificate zusammenarbeiten</h2>
             <p class="text-base sm:text-lg md:text-xl mb-8 text-blue-100">
                 Vereinbaren Sie ein Beratungsgespräch und erfahren Sie, wie wir Ihre Software-Qualität und Compliance verbessern können.
             </p>
-            <a href="kontakt.html" class="inline-block px-10 py-4 bg-white text-Nexus Global-blue rounded-full font-bold hover:bg-gray-100 transition shadow-xl text-lg">
+            <a href="kontakt.html" class="inline-block px-10 py-4 bg-white text-Nexus-blue rounded-full font-bold hover:bg-gray-100 transition shadow-xl text-lg">
                 Kostenloses Beratungsgespräch vereinbaren
             </a>
         </div>
@@ -713,10 +713,10 @@
 
     <!-- Nexus Global AI Chat Widget -->
     <style>
-        #Nexus Global-chat-widget{position:fixed;z-index:99999}#Nexus Global-chat-button{position:fixed;bottom:20px;right:20px;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#0056b3 0%,#003d82 100%);border:none;color:#fff;font-size:28px;cursor:pointer;box-shadow:0 4px 20px rgba(0,86,179,.4);transition:all .3s ease;display:flex;align-items:center;justify-content:center;z-index:99999}#Nexus Global-chat-button:hover{transform:scale(1.1);box-shadow:0 6px 25px rgba(0,86,179,.6)}#Nexus Global-chat-button.active{background:linear-gradient(135deg,#dc2626 0%,#991b1b 100%)}#Nexus Global-chat-iframe-container{position:fixed;bottom:90px;right:20px;width:400px;height:600px;border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,.3);overflow:hidden;display:none;z-index:99998}#Nexus Global-chat-iframe-container.active{display:block}@media (max-width:500px){#Nexus Global-chat-iframe-container{bottom:0;right:0;left:0;top:0;width:100%;height:100%;border-radius:0}#Nexus Global-chat-button{bottom:15px;right:15px;width:55px;height:55px;font-size:24px}}
+        #Nexus-chat-widget{position:fixed;z-index:99999}#Nexus-chat-button{position:fixed;bottom:20px;right:20px;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#0056b3 0%,#003d82 100%);border:none;color:#fff;font-size:28px;cursor:pointer;box-shadow:0 4px 20px rgba(0,86,179,.4);transition:all .3s ease;display:flex;align-items:center;justify-content:center;z-index:99999}#Nexus-chat-button:hover{transform:scale(1.1);box-shadow:0 6px 25px rgba(0,86,179,.6)}#Nexus-chat-button.active{background:linear-gradient(135deg,#dc2626 0%,#991b1b 100%)}#Nexus-chat-iframe-container{position:fixed;bottom:90px;right:20px;width:400px;height:600px;border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,.3);overflow:hidden;display:none;z-index:99998}#Nexus-chat-iframe-container.active{display:block}@media (max-width:500px){#Nexus-chat-iframe-container{bottom:0;right:0;left:0;top:0;width:100%;height:100%;border-radius:0}#Nexus-chat-button{bottom:15px;right:15px;width:55px;height:55px;font-size:24px}}
     </style>
-    <div id="Nexus Global-chat-widget"><button id="Nexus Global-chat-button" onclick="toggleNexus GlobalChat()" aria-label="Chat öffnen">💬</button><div id="Nexus Global-chat-iframe-container"><iframe src="chatbot.html" style="width:100%;height:100%;border:none;border-radius:20px"></iframe></div></div>
-    <script>function toggleNexus GlobalChat(){const btn=document.getElementById('Nexus Global-chat-button'),container=document.getElementById('Nexus Global-chat-iframe-container');container.classList.contains('active')?(container.classList.remove('active'),btn.classList.remove('active'),btn.innerHTML='💬'):(container.classList.add('active'),btn.classList.add('active'),btn.innerHTML='✕')}document.addEventListener('keydown',e=>{if('Escape'===e.key){const container=document.getElementById('Nexus Global-chat-iframe-container'),btn=document.getElementById('Nexus Global-chat-button');container.classList.contains('active')&&(container.classList.remove('active'),btn.classList.remove('active'),btn.innerHTML='💬')}})</script>
+    <div id="Nexus-chat-widget"><button id="Nexus-chat-button" onclick="toggleNexusChat()" aria-label="Chat öffnen">💬</button><div id="Nexus-chat-iframe-container"><iframe src="chatbot.html" style="width:100%;height:100%;border:none;border-radius:20px"></iframe></div></div>
+    <script>function toggleNexusChat(){const btn=document.getElementById('Nexus-chat-button'),container=document.getElementById('Nexus-chat-iframe-container');container.classList.contains('active')?(container.classList.remove('active'),btn.classList.remove('active'),btn.innerHTML='💬'):(container.classList.add('active'),btn.classList.add('active'),btn.innerHTML='✕')}document.addEventListener('keydown',e=>{if('Escape'===e.key){const container=document.getElementById('Nexus-chat-iframe-container'),btn=document.getElementById('Nexus-chat-button');container.classList.contains('active')&&(container.classList.remove('active'),btn.classList.remove('active'),btn.innerHTML='💬')}})</script>
 
 </body>
 </html>
